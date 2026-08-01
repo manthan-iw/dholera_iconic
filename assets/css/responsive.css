@@ -1141,3 +1141,20 @@
     visibility: hidden !important;
   }
 }
+
+/* Footer Responsive Scaling */
+@media (max-width: 767.98px) {
+  .footer-content {
+    padding-top: 2.5rem !important;
+    padding-bottom: 2rem !important;
+    border-radius: 20px 20px 0 0 !important;
+  }
+
+  .footer-logo {
+    height: 38px !important;
+  }
+
+  .copyright-row {
+    text-align: center;
+  }
+}
