@@ -786,6 +786,18 @@
     padding: 8px 16px !important;
     font-size: 13.5px !important;
   }
+
+  .journey-card img {
+    height: 220px !important;
+  }
+
+  .journey-card-body {
+    padding: 20px 20px !important;
+  }
+
+  .journey-year-span {
+    font-size: 32px !important;
+  }
 }
 
 /* Medium viewports (up to 767px - Mobile Phones) */
@@ -930,10 +942,34 @@
     font-size: 12.5px !important;
     white-space: nowrap !important;
   }
+
+  .journey-card img {
+    height: 180px !important;
+  }
+
+  .journey-card-body {
+    padding: 16px 16px !important;
+  }
+
+  .journey-year-span {
+    font-size: 26px !important;
+  }
 }
 
 /* Small viewports (up to 575px - Compact Mobile) */
 @media (max-width: 575px) {
+
+  .journey-card img {
+    height: 150px !important;
+  }
+
+  .journey-card-body {
+    padding: 14px 14px !important;
+  }
+
+  .journey-year-span {
+    font-size: 22px !important;
+  }
 
   .floor-tabs-container {
     grid-template-columns: repeat(3, 1fr) !important;

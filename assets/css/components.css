@@ -1779,13 +1779,18 @@ body.inner-page .hero-section::before,
 
 .journey-card img {
   width: 100%;
-  height: 380px;
+  height: 320px;
   object-fit: cover;
   display: block;
 }
 
 .journey-card-body {
-  padding: 32px 36px;
+  padding: 24px 28px;
+}
+
+.journey-year-span {
+  color: #0259A5 !important;
+  font-size: 38px;
 }
 
 .journey-arrow-btn {
