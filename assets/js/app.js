@@ -3,7 +3,56 @@ document.addEventListener("DOMContentLoaded", () => {
   initAmenitiesSlider();
   initJourneySlider();
   initSmoothScroll();
+  initScrollAnimations();
 });
+
+// Scroll Reveal Animations & Number Counter Handler
+function initScrollAnimations() {
+  const animatedElements = document.querySelectorAll(".slide-up, .fade-in, .scale-up");
+  if (!animatedElements.length) return;
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("animated");
+        const counters = entry.target.querySelectorAll(".counter-value");
+        counters.forEach(counter => animateCounter(counter));
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  animatedElements.forEach(el => observer.observe(el));
+}
+
+// Counter Animation Function
+function animateCounter(el) {
+  if (el.dataset.animated) return;
+  el.dataset.animated = "true";
+
+  const target = parseInt(el.getAttribute("data-target")) || 0;
+  const suffix = el.getAttribute("data-suffix") || "";
+  let count = 0;
+  const duration = 1800;
+  const startTime = performance.now();
+
+  function updateCount(currentTime) {
+    const elapsedTime = currentTime - startTime;
+    const progress = Math.min(elapsedTime / duration, 1);
+    const easeOutProgress = 1 - Math.pow(1 - progress, 3);
+    count = Math.floor(easeOutProgress * target);
+
+    el.innerText = count + suffix;
+
+    if (progress < 1) {
+      requestAnimationFrame(updateCount);
+    } else {
+      el.innerText = target + suffix;
+    }
+  }
+
+  requestAnimationFrame(updateCount);
+}
 
 // About Us Section Interactive Slider
 function initAboutSlider() {

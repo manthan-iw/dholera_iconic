@@ -1294,11 +1294,34 @@
 }
 
 .quote-card {
-  background: #FFFFFF;
-  border: 1.5px solid rgba(2, 89, 165, 0.35);
-  border-radius: 14px;
-  padding: 20px 24px;
-  box-shadow: 0 4px 15px rgba(2, 89, 165, 0.04);
+  background: linear-gradient(135deg, rgba(237, 245, 254, 0.6) 0%, rgba(255, 255, 255, 0.95) 100%);
+  border: 1px solid rgba(214, 147, 42, 0.3);
+  border-left: 4px solid #D6932A;
+  border-radius: 16px;
+  padding: 22px 24px;
+  box-shadow: 0 8px 25px rgba(2, 89, 165, 0.05);
+  transition: all 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.quote-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(214, 147, 42, 0.6);
+  box-shadow: 0 12px 30px rgba(214, 147, 42, 0.15);
+}
+
+.stat-mini-card {
+  padding: 16px 14px;
+  background: linear-gradient(135deg, rgba(237, 245, 254, 0.4) 0%, rgba(255, 255, 255, 0.9) 100%);
+  border: 1px solid rgba(2, 89, 165, 0.08);
+  border-radius: 16px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.stat-mini-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(214, 147, 42, 0.35);
+  box-shadow: 0 8px 20px rgba(2, 89, 165, 0.06);
 }
 
 .projects-overview-banner {
@@ -1326,8 +1349,10 @@
   }
 
   .project-banner-img {
-    height: 280px;
-    min-height: 240px;
+    height: 320px;
+    min-height: 280px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   }
 
   .quote-card {
