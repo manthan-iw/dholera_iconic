@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 60" width="220" height="60">
+  <g transform="translate(10, 8)">
+    <path d="M 18 2 L 32 2 L 36 18 L 25 32 L 14 18 Z" fill="#9E1B1E" stroke="#D4AF37" stroke-width="2"/>
+    <text x="20" y="24" font-family="Georgia, serif" font-weight="bold" font-size="18" fill="#FFFFFF">R</text>
+    <text x="44" y="22" font-family="Georgia, serif" font-weight="bold" font-size="20" fill="#111111">Reliance</text>
+    <text x="45" y="35" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="500" font-size="8" fill="#555555" letter-spacing="1">Industries Limited</text>
+  </g>
+</svg>

@@ -1,0 +1,113 @@
+/* ==========================================
+   SCROLL REVEAL ANIMATIONS
+   ========================================== */
+
+/* Base transition parameters */
+.fade-in,
+.slide-up,
+.slide-left,
+.slide-right,
+.zoom-in {
+  opacity: 0;
+  transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1),
+              transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: transform, opacity;
+}
+
+/* Animations active states */
+.fade-in.animated {
+  opacity: 1;
+}
+
+.slide-up.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slide-left.animated {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-right.animated {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.zoom-in.animated {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Base states (before animation) */
+.slide-up {
+  transform: translateY(40px);
+}
+
+.slide-left {
+  transform: translateX(-40px);
+}
+
+.slide-right {
+  transform: translateX(40px);
+}
+
+.zoom-in {
+  transform: scale(0.95);
+}
+
+/* Delay modifiers for sequential item loading */
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; }
+.delay-5 { transition-delay: 0.5s; }
+.delay-6 { transition-delay: 0.6s; }
+
+/* ==========================================
+   INTERACTIVE HOVER MICRO-ANIMATIONS
+   ========================================== */
+
+/* Image Zoom Hover effect */
+.image-zoom-hover {
+  overflow: hidden;
+}
+
+.image-zoom-hover img {
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.image-zoom-hover:hover img {
+  transform: scale(1.05);
+}
+
+/* Hover Lift utility */
+.hover-lift {
+  transition: var(--transition-normal);
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+}
+
+/* Card Hover Lift & Shadow */
+.card-hover {
+  transition: var(--transition-normal);
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(2, 89, 165, 0.1);
+}
+
+/* Ripple keyframe if needed */
+@keyframes button-ripple {
+  0% {
+    transform: scale(0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,818 @@
+/* ==========================================
+   RESPONSIVE LAYOUTS & MEDIA QUERIES
+   ========================================== */
+
+/* Laptop and Medium Desktop screens (up to 1600px) */
+@media (max-width: 1600px) {
+
+  /* Container Sizing */
+  .container,
+  .max-width-container {
+    max-width: 1440px !important;
+  }
+
+  /* Typography */
+  h1,
+  .h1-title {
+    font-size: 60px !important;
+    line-height: 1.15 !important;
+  }
+
+  h2,
+  .h1-title {
+    font-size: 48px !important;
+    line-height: 1.18 !important;
+  }
+
+  h3,
+  .h3-title {
+    font-size: 36px !important;
+  }
+
+  h4,
+  .h4-title {
+    font-size: 24px !important;
+  }
+
+  p.fs-4 {
+    font-size: 1.10rem !important;
+  }
+
+  /* Paddings & Spacing */
+  .section-padding,
+  .cta-section-bg,
+  .amenities-section-bg {
+    padding: 70px 0 !important;
+  }
+
+  .stats-section-bg {
+    padding: 180px 0 !important;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    height: 680px !important;
+    padding-top: 130px !important;
+  }
+
+
+  .slide-number {
+    font-size: 100px !important;
+  }
+
+  /* Smart Infrastructure */
+  .infra-card {
+    padding: 50px 30px !important;
+  }
+
+  .infra-icon-wrapper {
+    width: 66px !important;
+    height: 66px !important;
+  }
+
+  /* Stats Section */
+  .stat-number {
+    font-size: 64px !important;
+  }
+
+  .stat-low {
+    margin-top: 65px !important;
+  }
+
+  /* What We Offer Section */
+  .offer-card {
+    height: 480px !important;
+    /* padding: 40px 32px !important; */
+  }
+
+  .offer-card-image-wrapper {
+    height: 300px !important;
+  }
+
+  /* Amenities Section */
+  .amenities-slider-card {
+    padding: 42px 36px !important;
+  }
+
+  .amenity-slide-content {
+    min-height: 210px !important;
+  }
+
+  /* Architecture Section */
+  #architecture-section .overflow-hidden {
+    height: 500px !important;
+  }
+
+  /* Header & Navbar */
+  .navbar {
+    padding-top: 14px !important;
+    padding-bottom: 14px !important;
+  }
+
+  .logo-img {
+    height: 44px !important;
+  }
+
+  .navbar-nav {
+    gap: 20px !important;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 14px !important;
+  }
+
+  .header-call-text,
+  .header-call-num {
+    font-size: 14px !important;
+  }
+
+  .navbar-nav .nav-link::after {
+    left: 0 !important;
+  }
+
+  .navbar .d-xl-flex {
+    gap: 20px !important;
+  }
+
+  .btn-enquire {
+    padding: 7px 7px 7px 20px !important;
+  }
+
+  .btn-enquire span {
+    font-size: 14px !important;
+  }
+
+  .btn-enquire .btn-arrow-circle {
+    width: 36px !important;
+    height: 36px !important;
+  }
+}
+
+/* Desktop and Large Laptops (up to 1440px) */
+@media (max-width: 1440px) {
+
+  /* Container Sizing */
+  .container,
+  .max-width-container {
+    max-width: 1300px !important;
+  }
+
+  /* Typography */
+  h1,
+  .h1-title {
+    font-size: 56px !important;
+    line-height: 1.15 !important;
+  }
+
+  h2,
+  .h1-title {
+    font-size: 44px !important;
+    line-height: 1.18 !important;
+  }
+
+  h3,
+  .h3-title {
+    font-size: 32px !important;
+  }
+
+  h4,
+  .h4-title {
+    font-size: 22px !important;
+  }
+
+  p.fs-4 {
+    font-size: 1.10rem !important;
+  }
+
+  /* Paddings & Spacing */
+  .section-padding,
+  .cta-section-bg,
+  .amenities-section-bg {
+    padding: 60px 0 !important;
+  }
+
+
+  .stats-section-bg {
+    padding: 150px 0 !important;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    height: 640px !important;
+    padding-top: 120px !important;
+  }
+
+
+  .slide-number {
+    font-size: 80px !important;
+  }
+
+  /* Smart Infrastructure */
+  .infra-card {
+    padding: 40px 24px !important;
+  }
+
+  .infra-icon-wrapper {
+    width: 60px !important;
+    height: 60px !important;
+  }
+
+  /* Stats Section */
+  .stat-number {
+    font-size: 56px !important;
+  }
+
+  .stat-low {
+    margin-top: 50px !important;
+  }
+
+  /* What We Offer Section */
+  .offer-card {
+    height: 440px !important;
+    /* padding: 30px !important; */
+  }
+
+  .offer-card-image-wrapper {
+    height: 270px !important;
+  }
+
+  /* Amenities Section */
+  .amenities-slider-card {
+    padding: 36px 30px !important;
+  }
+
+  .amenity-slide-content {
+    min-height: 180px !important;
+  }
+
+  /* Architecture Section */
+  #architecture-section .overflow-hidden {
+    height: 440px !important;
+  }
+
+  /* Header & Navbar */
+  .navbar {
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+  }
+
+  .logo-img {
+    height: 40px !important;
+  }
+
+  .navbar-nav {
+    gap: 15px !important;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 13.5px !important;
+  }
+
+  .header-call-text,
+  .header-call-num {
+    font-size: 13.5px !important;
+  }
+
+  .navbar-nav .nav-link::after {
+    left: 0 !important;
+  }
+
+  .navbar .d-xl-flex {
+    gap: 16px !important;
+  }
+
+  .btn-enquire {
+    padding: 7px 7px 7px 18px !important;
+    font-size: 13.5px !important;
+  }
+
+  .btn-enquire span {
+    font-size: 13.5px !important;
+  }
+
+  .btn-enquire .btn-arrow-circle {
+    width: 34px !important;
+    height: 34px !important;
+  }
+}
+
+/* Standard Laptops (up to 1366px) */
+@media (max-width: 1366px) {
+
+  /* Container Sizing */
+  .container,
+  .max-width-container {
+    max-width: 1270px !important;
+  }
+
+  /* Typography */
+  h1,
+  .h1-title {
+    font-size: 52px !important;
+    line-height: 1.15 !important;
+  }
+
+  h2,
+  .h1-title {
+    font-size: 40px !important;
+    line-height: 1.18 !important;
+  }
+
+  h3,
+  .h3-title {
+    font-size: 30px !important;
+  }
+
+  h4,
+  .h4-title {
+    font-size: 20px !important;
+  }
+
+  p.fs-4 {
+    font-size: 1.10rem !important;
+  }
+
+  /* Paddings & Spacing */
+  .section-padding,
+  .cta-section-bg,
+  .amenities-section-bg {
+    padding: 50px 0 !important;
+  }
+
+  .stats-section-bg {
+    padding: 160px 0 !important;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    height: 600px !important;
+    padding-top: 110px !important;
+  }
+
+  .slide-title {
+    font-size: 20px !important;
+  }
+
+  .slide-desc {
+    font-size: 13px !important;
+  }
+
+  /* Smart Infrastructure */
+  .infra-card {
+    padding: 36px 20px !important;
+  }
+
+  .infra-icon-wrapper {
+    width: 54px !important;
+    height: 54px !important;
+  }
+
+  /* Stats Section */
+  .stat-number {
+    font-size: 48px !important;
+  }
+
+  .stat-low {
+    margin-top: 40px !important;
+  }
+
+  /* What We Offer Section */
+  .offer-card {
+    height: 410px !important;
+    /* padding: 24px 20px !important; */
+  }
+
+  .offer-card-image-wrapper {
+    height: 250px !important;
+  }
+
+  /* Amenities Section */
+  .amenities-slider-card {
+    padding: 32px 26px !important;
+  }
+
+  .amenity-slide-content {
+    min-height: 160px !important;
+  }
+
+  /* Architecture Section */
+  #architecture-section .overflow-hidden {
+    height: 400px !important;
+  }
+
+  /* Header & Navbar */
+  .navbar {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+
+  .logo-img {
+    height: 36px !important;
+  }
+
+  .navbar-nav {
+    gap: 12px !important;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 12px !important;
+  }
+
+  .header-call-text,
+  .header-call-num {
+    font-size: 12px !important;
+  }
+
+  .navbar-nav .nav-link::after {
+    left: 0 !important;
+  }
+
+  .navbar .d-xl-flex {
+    gap: 12px !important;
+  }
+
+  .btn-enquire,
+  .btn-cta {
+    padding: 5px 5px 5px 14px !important;
+  }
+
+  .btn-enquire span,
+  .btn-cta span {
+    font-size: 12px !important;
+  }
+
+  .btn-enquire .btn-arrow-circle,
+  .btn-cta .btn-arrow-circle {
+    width: 28px !important;
+    height: 28px !important;
+  }
+}
+
+/* Small Laptops (up to 1280px) */
+@media (max-width: 1280px) {
+
+  /* Container Sizing */
+  .container,
+  .max-width-container {
+    max-width: 1270px !important;
+  }
+
+  /* Typography */
+  h1,
+  .h1-title {
+    font-size: 46px !important;
+    line-height: 1.15 !important;
+  }
+
+  h2,
+  .h1-title {
+    font-size: 36px !important;
+    line-height: 1.18 !important;
+  }
+
+  h3,
+  .h3-title {
+    font-size: 28px !important;
+  }
+
+  h4,
+  .h4-title {
+    font-size: 19px !important;
+  }
+
+  p.fs-4 {
+    font-size: 1.1rem !important;
+  }
+
+  /* Paddings & Spacing */
+  .section-padding,
+  .cta-section-bg,
+  .amenities-section-bg {
+    padding: 50px 0 !important;
+  }
+  
+  .stats-section-bg {
+    padding: 150px 0 !important;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    height: 560px !important;
+    padding-top: 100px !important;
+  }
+
+  .slide-number {
+    font-size: 60px !important;
+  }
+
+  /* Smart Infrastructure */
+  .infra-card {
+    padding: 30px 16px !important;
+  }
+
+  .infra-icon-wrapper {
+    width: 48px !important;
+    height: 48px !important;
+  }
+
+  /* Stats Section */
+  .stat-number {
+    font-size: 42px !important;
+  }
+
+  .stat-low {
+    margin-top: 30px !important;
+  }
+
+  /* What We Offer Section */
+  .offer-card {
+    height: 380px !important;
+    /* padding: 20px 16px !important; */
+  }
+
+  .offer-card-image-wrapper {
+    height: 230px !important;
+  }
+
+  /* Amenities Section */
+  .amenities-slider-card {
+    padding: 28px 20px !important;
+  }
+
+  .amenity-slide-content {
+    min-height: 150px !important;
+  }
+
+  /* Architecture Section */
+  #architecture-section .overflow-hidden {
+    height: 360px !important;
+  }
+
+  /* Header & Navbar */
+  .navbar {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+  }
+
+  .logo-img {
+    height: 34px !important;
+  }
+
+  .navbar-nav {
+    gap: 10px !important;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 13px !important;
+    /* padding: 4px 6px !important; */
+  }
+
+  .navbar-nav .nav-link::after {
+    left: 6px !important;
+  }
+
+  .navbar .d-xl-flex {
+    gap: 10px !important;
+  }
+
+  .btn-enquire,
+  .btn-cta {
+    padding: 6px 6px 6px 14px !important;
+  }
+
+  .btn-enquire span,
+  .btn-cta span {
+    font-size: 12.5px !important;
+  }
+
+  .btn-enquire .btn-arrow-circle,
+  .btn-cta .btn-arrow-circle {
+    width: 28px !important;
+    height: 28px !important;
+  }
+}
+
+/* Mobile and Tablet viewports (up to 991px) */
+@media (max-width: 991px) {
+
+  h1,
+  .h1-title,
+  h2,
+  .h1-title {
+    font-size: 42px !important;
+    line-height: 1.2 !important;
+  }
+
+  h3,
+  .h3-title {
+    font-size: 32px !important;
+  }
+
+  h4,
+  .h4-title {
+    font-size: 24px !important;
+  }
+
+  p.fs-4 {
+    font-size: 1.1rem !important;
+  }
+
+  .section-padding,
+  .stats-section-bg,
+  .cta-section-bg,
+  .amenities-section-bg {
+    padding: 60px 0 !important;
+  }
+
+  .hero-section {
+    height: auto !important;
+    min-height: 550px !important;
+    padding-top: 120px !important;
+    padding-bottom: 80px !important;
+  }
+
+  .about-left-wrapper {
+    height: 400px !important;
+  }
+
+  .about-slider-card {
+    padding: 24px !important;
+  }
+
+  .slide-number {
+    font-size: 70px !important;
+  }
+
+  .offer-card {
+    height: auto !important;
+    margin-top: 0 !important;
+  }
+
+  .offer-card-image-wrapper {
+    height: 260px !important;
+  }
+
+  .amenities-slider-card {
+    padding: 30px 20px !important;
+  }
+
+  .amenity-slide-content {
+    min-height: auto !important;
+  }
+
+  #architecture-section .overflow-hidden {
+    height: 320px !important;
+  }
+}
+
+/* Medium viewports (up to 767px) */
+@media (max-width: 767px) {
+
+  h1,
+  .h1-title,
+  h2,
+  .h1-title {
+    font-size: 36px !important;
+  }
+
+  h3,
+  .h3-title {
+    font-size: 28px !important;
+  }
+
+  h4,
+  .h4-title {
+    font-size: 20px !important;
+  }
+
+  .section-padding,
+  .stats-section-bg,
+  .cta-section-bg,
+  .amenities-section-bg {
+    padding: 50px 0 !important;
+  }
+
+  .hero-curve,
+  .about-hero-curve,
+  .why-hero-curve,
+  .projects-hero-curve,
+  .location-hero-curve,
+  .contact-hero-curve,
+  .amenities-hero-curve {
+    display: none !important;
+    height: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  .hero-section {
+    min-height: 600px !important;
+  }
+
+  .about-left-wrapper {
+    height: 480px !important;
+    min-height: 480px !important;
+    position: relative !important;
+    overflow: hidden !important;
+  }
+
+  .offer-card {
+    height: auto !important;
+    margin-top: 0 !important;
+  }
+
+  .offer-card-image-wrapper {
+    height: 220px !important;
+  }
+
+  #architecture-section .overflow-hidden {
+    height: 260px !important;
+  }
+
+  .copyright-row {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+}
+
+/* Small viewports (up to 575px) */
+@media (max-width: 575px) {
+
+  h1,
+  .h1-title,
+  h2,
+  .h1-title {
+    font-size: 30px !important;
+  }
+
+  h3,
+  .h3-title {
+    font-size: 24px !important;
+  }
+
+  h4,
+  .h4-title {
+    font-size: 18px !important;
+  }
+
+  .tag-capsule {
+    font-size: 13px !important;
+    padding: 8px 18px !important;
+  }
+
+  .about-slider-card {
+    padding: 16px !important;
+  }
+
+  .slide-number {
+    font-size: 50px !important;
+  }
+
+  .offer-card {
+    height: auto !important;
+    margin-top: 0 !important;
+  }
+
+  .offer-card-image-wrapper {
+    height: 200px !important;
+  }
+
+  .amenities-slider-card {
+    padding: 20px 16px !important;
+  }
+
+  .amenity-slide-content {
+    min-height: auto !important;
+  }
+
+  #architecture-section .overflow-hidden {
+    height: 200px !important;
+  }
+}
+
+/* Extra Small viewports (up to 375px) */
+@media (max-width: 375px) {
+
+  h1,
+  .h1-title,
+  h2,
+  .h1-title {
+    font-size: 26px !important;
+  }
+
+  .btn-cta,
+  .btn-enquire {
+    width: 100% !important;
+    justify-content: space-between !important;
+  }
+}
+
+/* Hide Journey Slider white gradient overlay on mobile and tablet screens */
+@media (max-width: 991px) {
+  .journey-slider-wrapper::after {
+    display: none !important;
+    content: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+  }
+}

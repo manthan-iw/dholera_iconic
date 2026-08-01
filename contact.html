@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Dholera Iconic</title>
+  <meta name="description"
+    content="Connect with Shyam Group property specialists for Dholera Iconic, book a site visit, view FAQ, and enquire about office spaces, showrooms, and retail plots.">
+
+  <!-- Bootstrap & Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+
+<body class="inner-page">
+
+  <!-- Header Dynamic Component Placeholder -->
+  <div id="header-placeholder"></div>
+
+  <!-- ==========================================
+     HERO SECTION
+     ========================================== -->
+  <section class="hero-section hero-contact" id="hero">
+    <div class="container max-width-container">
+      <div class="row">
+        <div class="col-12 col-lg-8 text-white hero-content-wrapper">
+          <div class="slide-up animated">
+            <h1 class="h1-title mb-4 font-dm font-medium text-white hero-title">Your Gateway to India's First Smart City
+            </h1>
+            <p class="font-switzer font-regular text-white opacity-75 mb-5 fs-4 lh-base hero-desc">
+              Connect with our property specialists today. Your dream investment in Dholera SIR is just one conversation
+              away.
+            </p>
+            <a href="#enquiry-form-section" class="btn btn-enquire d-inline-flex align-items-center gap-3">
+              <span class="font-switzer font-medium text-dark">Explore Spaces</span>
+              <div class="btn-arrow-circle d-flex align-items-center justify-content-center">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 8H15M15 8L8 1M15 8L8 15" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-curve"></div>
+  </section>
+
+
+  <!-- ==========================================
+     ENQUIRY FORM & OFFICE DETAILS SECTION
+     ========================================== -->
+  <section class="section-padding py-5" id="enquiry-form-section">
+    <div class="container max-width-container py-4">
+      <div class="row g-5 align-items-stretch">
+
+        <!-- Left Enquiry Form Column -->
+        <div class="col-12 col-lg-7 slide-up d-flex flex-column h-100">
+          <div class="enquiry-card-container h-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="mb-4">
+                <h2 class="h1-title text-gradient-primary font-dm mb-2">Send an Enquiry</h2>
+                <p class="font-switzer font-regular text-muted fs-6">Please fill out the form below, and our
+                  relationship manager will get back to you within 2 hours.</p>
+              </div>
+
+              <!-- Form -->
+              <form id="contactForm" onsubmit="handleFormSubmit(event)">
+                <div class="row g-3">
+                  <div class="col-12 col-md-6">
+                    <label for="fullName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="emailAddr" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="emailAddr" placeholder="name@domain.com" required>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="phoneNum" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="phoneNum" placeholder="+91 XXXXX XXXXX" required>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="budgetRange" class="form-label">Investment Budget</label>
+                    <select class="form-select" id="budgetRange" required>
+                      <option value="" disabled selected>Select budget range (e.g. 15L - 30L)</option>
+                      <option value="15-30">15L - 30L</option>
+                      <option value="30-50">30L - 50L</option>
+                      <option value="50-100">50L - 1Cr</option>
+                      <option value="100+">Above 1Cr</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <label for="plotSize" class="form-label">Preferred Plot Size</label>
+                    <input type="text" class="form-control" id="plotSize"
+                      placeholder="e.g. 200 Sq. Yards, 500 Sq. Yards" required>
+                  </div>
+                  <div class="col-12">
+                    <label for="requirements" class="form-label">Message / Requirements</label>
+                    <textarea class="form-control" id="requirements" rows="4"
+                      placeholder="Tell us about your investment goals..." required></textarea>
+                  </div>
+                  <div class="col-12 mt-4">
+                    <button type="submit" class="btn btn-enquire d-inline-flex align-items-center gap-3 px-4 py-3"
+                      style="background: var(--secondary-gradient); border-color: transparent; width: fit-content;"
+                      id="submitBtn">
+                      <span class="font-switzer font-medium text-white fs-6">Send Enquiry & Request Callback</span>
+                      <div class="btn-arrow-circle d-flex align-items-center justify-content-center"
+                        style="background: #FFFFFF;">
+                        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 8H15M15 8L8 1M15 8L8 15" stroke="#0259A5" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </form>
+
+              <!-- Success message placeholder -->
+              <div class="alert alert-success d-none mt-4 text-center py-3" id="successAlert" role="alert">
+                <i class="bi bi-check-circle-fill me-2 fs-5"></i>
+                <strong>Thank you!</strong> Your enquiry has been received. Our investment advisor will call you within
+                2 hours.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Corporate Office Details Column -->
+        <div class="col-12 col-lg-5 slide-up delay-1 d-flex flex-column justify-content-between h-100"
+          style="padding-top: 48px;">
+          <div>
+            <div class="mb-4">
+              <h2 class="h1-title text-gradient-primary font-dm mb-2">Corporate Office</h2>
+              <p class="font-switzer font-regular text-muted fs-6">Visit our headquarters or get in touch through our
+                direct business communication channels.</p>
+            </div>
+
+            <div class="d-flex flex-column gap-3">
+              <!-- Card 1 -->
+              <div class="corp-info-card">
+                <div class="corp-info-icon"><i class="bi bi-telephone fs-4"></i></div>
+                <div>
+                  <h5 class="font-switzer font-semibold text-dark fs-5 mb-1">Call Us Directly</h5>
+                  <p class="font-dm font-medium text-dark fs-6 mb-1">+91 8511 33 22 00</p>
+                  <p class="font-switzer font-regular text-muted fs-6 mb-0">Toll-free specialist helpline: Mon-Sat, 9 AM
+                    - 7 PM</p>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="corp-info-card">
+                <div class="corp-info-icon"><i class="bi bi-envelope fs-4"></i></div>
+                <div>
+                  <h5 class="font-switzer font-semibold text-dark fs-5 mb-1">Email Support</h5>
+                  <p class="font-dm font-medium text-dark fs-6 mb-1">info@shyamgroups.co.in</p>
+                  <p class="font-switzer font-regular text-muted fs-6 mb-0">For project portfolios, floor plans, and
+                    corporate pricing</p>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="corp-info-card">
+                <div class="corp-info-icon"><i class="bi bi-geo-alt fs-4"></i></div>
+                <div>
+                  <h5 class="font-switzer font-semibold text-dark fs-5 mb-1">Project Location</h5>
+                  <p class="font-dm font-medium text-dark fs-6 mb-1">Dholera SIR, Activation Zone Gujarat – 382460,
+                    India</p>
+                  <p class="font-switzer font-regular text-muted fs-6 mb-0">Strategically located inside the smart city
+                    development zone</p>
+                </div>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="corp-info-card">
+                <div class="corp-info-icon"><i class="bi bi-clock fs-4"></i></div>
+                <div>
+                  <h5 class="font-switzer font-semibold text-dark fs-5 mb-1">Business Hours</h5>
+                  <p class="font-dm font-medium text-dark fs-6 mb-1">Monday - Saturday: 09:00 AM - 07:00 PM</p>
+                  <p class="font-switzer font-regular text-muted fs-6 mb-0">Sunday: Closed (Site visits by appointments
+                    only)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+     GUIDED SITE VISIT SECTION
+     ========================================== -->
+  <section class="section-padding py-5 bg-light" id="site-visit">
+    <div class="container max-width-container">
+      <div class="row g-4 g-lg-5 align-items-stretch">
+
+        <!-- Left Content -->
+        <div class="col-12 col-lg-7 slide-up d-flex flex-column justify-content-between">
+          <div>
+            <div class="tag-capsule mb-4">Book a visit</div>
+            <h2 class="h1-title text-gradient-primary mb-4 font-dm">Schedule a Guided Site Visit.</h2>
+            <p class="font-switzer font-regular text-muted fs-5 lh-base mb-4 text-justify">
+              Seeing is believing. Experience the massive infrastructural growth of Dholera SIR firsthand. We provide
+              <strong>complimentary luxury pickup and drop-off services</strong> from Ahmedabad Airport or your hotel
+              directly to our Dholera Iconic site offices.
+            </p>
+
+            <!-- Checklist items -->
+            <div class="specs-checklist mb-4">
+              <div class="check-row mb-3">
+                <div class="check-circle"><i class="bi bi-check-lg"></i></div>
+                <span class="font-switzer font-regular text-dark fs-5">Personalized tour of the entire premium plot
+                  layouts</span>
+              </div>
+              <div class="check-row mb-3">
+                <div class="check-circle"><i class="bi bi-check-lg"></i></div>
+                <span class="font-switzer font-regular text-dark fs-5">Interactive briefing at the Dholera SIR
+                  smart-city model room</span>
+              </div>
+              <div class="check-row mb-3">
+                <div class="check-circle"><i class="bi bi-check-lg"></i></div>
+                <span class="font-switzer font-regular text-dark fs-5">Dedicated property expert to guide you on local
+                  laws and future ROI</span>
+              </div>
+              <div class="check-row mb-0">
+                <div class="check-circle"><i class="bi bi-check-lg"></i></div>
+                <span class="font-switzer font-regular text-dark fs-5">Complimentary luxury transport and hospitality
+                  included</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-3">
+            <a href="tel:+918511332200" class="btn btn-cta">
+              <span>Book Free Site Visit</span>
+              <div class="btn-arrow-circle d-flex align-items-center justify-content-center">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 8H15M15 8L8 1M15 8L8 15" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right image (Matching height via Flexbox) -->
+        <div class="col-12 col-lg-5 slide-up delay-1">
+          <div class="overflow-hidden h-100"
+            style="border-radius: var(--radius-lg); min-height: 480px; box-shadow: 0 15px 35px rgba(0,0,0,0.06);">
+            <img src="assets/images/guided_visit.jpg" alt="Guided Luxury Site Visit in Dholera"
+              class="w-100 h-100 object-fit-cover image-zoom-hover">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+     FAQ SECTION (ACCORDION)
+     ========================================== -->
+  <section class="section-padding py-5" id="faq">
+    <div class="container max-width-container py-4">
+
+      <!-- Section Header -->
+      <div class="mb-5 slide-up">
+        <h2 class="h1-title text-gradient-primary mb-3 font-dm">Frequently Asked Questions</h2>
+        <p class="font-switzer font-regular text-muted fs-4">Get quick answers to common questions about booking premium
+          residential plots in Dholera Iconic.</p>
+      </div>
+
+      <!-- Custom Accordion Stack -->
+      <div class="faq-accordion-stack mt-5 slide-up delay-1">
+
+        <!-- Accordion 1 -->
+        <div class="faq-accordion-item">
+          <button class="faq-accordion-header" onclick="toggleFaq(event)">
+            <span>How do I book a residential plot?</span>
+            <div class="faq-chevron"><i class="bi bi-plus"></i></div>
+          </button>
+          <div class="faq-accordion-body">
+            Booking is simple. You can reserve your preferred plot size by filling out our online enquiry form, paying a
+            basic booking deposit, and submitting KYC documents. Our relationship manager will handle all subsequent
+            documentation.
+          </div>
+        </div>
+
+        <!-- Accordion 2 -->
+        <div class="faq-accordion-item">
+          <button class="faq-accordion-header" onclick="toggleFaq(event)">
+            <span>What are the payment options?</span>
+            <div class="faq-chevron"><i class="bi bi-plus"></i></div>
+          </button>
+          <div class="faq-accordion-body">
+            We offer flexible, construction-linked payment plans. Standard options include a 10% booking amount,
+            followed by installments aligned with infrastructure development phases. Custom milestone plans can also be
+            arranged.
+          </div>
+        </div>
+
+        <!-- Accordion 3 -->
+        <div class="faq-accordion-item">
+          <button class="faq-accordion-header" onclick="toggleFaq(event)">
+            <span>Is there EMI or bank loan support available?</span>
+            <div class="faq-chevron"><i class="bi bi-plus"></i></div>
+          </button>
+          <div class="faq-accordion-body">
+            Yes, Shyam Group is partnered with major nationalized and private banks (including SBI, HDFC, and ICICI) to
+            provide competitive home and commercial plot loans with flexible EMI structures.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==========================================
+     CTA / QUESTIONS SECTION
+     ========================================== -->
+  <section class="contact-cta-section text-center py-5">
+    <div class="container max-width-container py-5">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-10 slide-up">
+          <h2 class="h1-title font-dm font-medium text-white mb-4">Still Have Questions?</h2>
+          <p class="font-switzer font-regular text-white opacity-75 mb-5 fs-4 col-lg-8 mx-auto lh-base">
+            Call us directly — our sales team is available Monday to Saturday, 9am to 7pm.
+          </p>
+          <div class="d-flex flex-wrap justify-content-center gap-4">
+            <a href="tel:+918511332200" class="btn btn-enquire d-inline-flex align-items-center gap-3">
+              <span class="font-switzer font-medium text-dark">Call now</span>
+              <div class="btn-arrow-circle d-flex align-items-center justify-content-center">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 8H15M15 8L8 1M15 8L8 15" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+            </a>
+            <a href="#enquiry-form-section" class="btn btn-cta d-inline-flex align-items-center gap-3"
+              style="background: transparent; border-color: var(--white);">
+              <span class="font-switzer font-medium text-white">Send an enquiry</span>
+              <div class="btn-arrow-circle d-flex align-items-center justify-content-center"
+                style="background: var(--white);">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 8H15M15 8L8 1M15 8L8 15" stroke="var(--primary)" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer Placeholder -->
+  <footer id="footer-placeholder" class="bg-white"></footer>
+
+
+  <!-- JS Script Files -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/animations.js"></script>
+
+  <!-- Form Submission & FAQ Toggle Script -->
+  <script>
+    function handleFormSubmit(event) {
+      event.preventDefault();
+
+      const submitBtn = document.getElementById("submitBtn");
+      const successAlert = document.getElementById("successAlert");
+      const form = document.getElementById("contactForm");
+
+      if (!submitBtn || !successAlert || !form) return;
+
+      // Show loader state
+      submitBtn.disabled = true;
+      const originalText = submitBtn.querySelector("span").textContent;
+      submitBtn.querySelector("span").textContent = "Sending Enquiry...";
+      submitBtn.querySelector(".btn-arrow-circle").innerHTML = `
+        <div class="spinner-border spinner-border-sm text-white" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      `;
+
+      setTimeout(() => {
+        // Reset button state
+        submitBtn.disabled = false;
+        submitBtn.querySelector("span").textContent = originalText;
+        submitBtn.querySelector(".btn-arrow-circle").innerHTML = `
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 8H15M15 8L8 1M15 8L8 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        `;
+
+        // Hide form and show success message
+        form.classList.add("d-none");
+        successAlert.classList.remove("d-none");
+      }, 1500);
+    }
+
+    function toggleFaq(event) {
+      const header = event.currentTarget;
+      const body = header.nextElementSibling;
+      const icon = header.querySelector(".faq-chevron i");
+
+      if (!body) return;
+
+      // Toggle active header class
+      header.classList.toggle("active");
+
+      // Expand/Collapse body with slide toggle effect
+      if (header.classList.contains("active")) {
+        body.style.display = "block";
+        icon.className = "bi bi-dash";
+      } else {
+        body.style.display = "none";
+        icon.className = "bi bi-plus";
+      }
+    }
+  </script>
+
+</body>
+
+</html>

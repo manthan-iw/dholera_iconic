@@ -1,0 +1,113 @@
+<nav class="navbar py-3">
+  <div class="container d-flex justify-content-between align-items-center">
+    <!-- Logo -->
+    <a class="navbar-brand m-0" href="index.html">
+      <img src="assets/images/logo.svg" alt="Dholera Iconic Logo" class="logo-img">
+    </a>
+
+    <!-- Nav Links (Desktop) -->
+    <div class="d-none d-xl-block">
+      <ul class="navbar-nav d-flex flex-row gap-3 gap-xxl-4 align-items-center list-unstyled m-0">
+        <li class="nav-item">
+          <a class="nav-link text-uppercase font-switzer font-medium text-dark" href="about.html">About Iconic</a>
+        </li>
+        <li class="nav-item nav-item-dropdown">
+          <a class="nav-link nav-link-caret text-uppercase font-switzer font-medium text-dark" href="projects.html">
+            Projects <span class="nav-caret"></span>
+          </a>
+          <ul class="dropdown-menu-custom">
+            <li><a href="projects.html#overview-section" class="dropdown-item-custom">Overview</a></li>
+            <li><a href="projects.html#floor-plan-section" class="dropdown-item-custom">Floor Plans</a></li>
+            <li><a href="amenities.html" class="dropdown-item-custom">Amenities</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-uppercase font-switzer font-medium text-dark" href="why-dholera.html">Why Dholera</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-uppercase font-switzer font-medium text-dark" href="location.html">Location</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-uppercase font-switzer font-medium text-dark" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Contact & Action Button (Desktop) -->
+    <div class="d-none d-xl-flex align-items-center gap-3 gap-xxl-4 header-right-actions">
+      <div class="d-flex align-items-center gap-2 header-call-wrapper">
+        <span class="font-switzer font-regular text-muted header-call-text">Call us:</span>
+        <a href="tel:+918511332200" class="font-switzer font-semibold text-dark text-decoration-none header-call-num">+91 85 11 33 22 00</a>
+      </div>
+      <a href="contact.html" class="btn btn-enquire header-btn-enquire d-flex align-items-center gap-2 gap-xxl-3">
+        <span class="font-switzer font-medium text-dark header-btn-text">Enquire Now</span>
+        <div class="btn-arrow-circle header-btn-arrow d-flex align-items-center justify-content-center">
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 8H15M15 8L8 1M15 8L8 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </a>
+    </div>
+
+    <!-- Mobile Hamburger Toggle (Tablet & Mobile) -->
+    <button class="navbar-toggler border-0 p-0 d-xl-none" type="button" id="hamburgerBtn" aria-label="Toggle navigation">
+      <span class="burger-bar"></span>
+      <span class="burger-bar"></span>
+      <span class="burger-bar"></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Slide Drawer Overlay -->
+<div class="mobile-drawer" id="mobileDrawer">
+  <div class="mobile-drawer-header d-flex justify-content-between align-items-center">
+    <a href="index.html">
+      <img src="assets/images/logo.svg" alt="Dholera Iconic Logo" class="logo-img" style="height: 40px;">
+    </a>
+    <button class="drawer-close-btn border-0 bg-transparent" id="drawerCloseBtn">
+      <i class="bi bi-x-lg fs-3"></i>
+    </button>
+  </div>
+  <div class="mobile-drawer-body mt-4">
+    <ul class="mobile-drawer-nav list-unstyled d-flex flex-column gap-3">
+      <li><a href="about.html" class="drawer-link">About Iconic</a></li>
+      <li class="mobile-dropdown-item">
+        <div class="d-flex justify-content-between align-items-center">
+          <a href="projects.html" class="drawer-link">Projects</a>
+          <button class="submenu-toggle-btn border-0 bg-transparent p-1" id="projectsSubmenuToggle" aria-label="Toggle Projects Submenu">
+            <i class="bi bi-chevron-down text-dark fs-6"></i>
+          </button>
+        </div>
+        <ul class="mobile-submenu list-unstyled" id="projectsSubmenu">
+          <li>
+            <a href="projects.html#overview-section" class="submenu-link">
+              <span class="submenu-dot"></span> Overview
+            </a>
+          </li>
+          <li>
+            <a href="projects.html#floor-plan-section" class="submenu-link">
+              <span class="submenu-dot"></span> Floor Plans
+            </a>
+          </li>
+          <li>
+            <a href="amenities.html" class="submenu-link">
+              <span class="submenu-dot"></span> Amenities
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li><a href="why-dholera.html" class="drawer-link">Why Dholera</a></li>
+      <li><a href="location.html" class="drawer-link">Location</a></li>
+      <li><a href="contact.html" class="drawer-link">Contact</a></li>
+    </ul>
+    <div class="mobile-drawer-contact mt-5 pt-4 border-top">
+      <p class="font-switzer font-regular text-muted mb-2">Call us:</p>
+      <a href="tel:+918511332200" class="font-switzer font-semibold text-dark fs-5 text-decoration-none d-block mb-4">+91 85 11 33 22 00</a>
+      <a href="contact.html" class="btn btn-cta w-100 py-3 text-center d-block">
+        <span>Enquire Now</span>
+      </a>
+    </div>
+  </div>
+</div>
+<!-- Drawer backdrop -->
+<div class="drawer-backdrop" id="drawerBackdrop"></div>
