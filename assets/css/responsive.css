@@ -106,10 +106,17 @@
     height: 500px !important;
   }
 
-  /* Header & Navbar */
-  .navbar {
+  /* Header & Navbar Solid White on Mobile Viewports */
+  .navbar,
+  .home-page .navbar {
+    background-color: #FFFFFF !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
     padding-top: 14px !important;
     padding-bottom: 14px !important;
+  }
+
+  .burger-bar {
+    background-color: var(--dark) !important;
   }
 
   .logo-img {
