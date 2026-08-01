@@ -647,7 +647,7 @@
 
   .hero-section {
     height: auto !important;
-    min-height: 550px !important;
+    min-height: 500px !important;
     padding-top: 120px !important;
     padding-bottom: 80px !important;
   }
@@ -736,7 +736,7 @@
   }
 
   .hero-section {
-    min-height: 600px !important;
+    min-height: 450px !important;
   }
 
   .about-left-wrapper {
