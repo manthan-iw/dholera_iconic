@@ -685,10 +685,14 @@
     height: 320px !important;
   }
 
-  /* Stats Section Mobile Alignment */
+  /* Stats Section Mobile Alignment - Clean Separation */
   .stats-section-bg {
     padding: 70px 0 !important;
     overflow: hidden !important;
+  }
+
+  .stats-container .row {
+    row-gap: 48px !important;
   }
 
   .stat-low,
@@ -697,16 +701,24 @@
   }
 
   .stat-graph-card {
-    padding-left: 20px !important;
-    gap: 16px !important;
+    padding-left: 18px !important;
+    gap: 12px !important;
+  }
+
+  .stat-graph-line {
+    display: none !important;
   }
 
   .stat-graph-line-wrapper {
-    bottom: -180px !important;
+    position: relative !important;
+    top: 6px !important;
+    bottom: auto !important;
+    padding-top: 0 !important;
   }
 
   .stat-number {
-    font-size: 42px !important;
+    font-size: 38px !important;
+    line-height: 1.1 !important;
   }
 }
 
@@ -791,11 +803,11 @@
 
   /* Stats Section 767px Mobile Scaling */
   .stat-number {
-    font-size: 34px !important;
+    font-size: 32px !important;
   }
 
-  .stat-graph-line-wrapper {
-    bottom: -120px !important;
+  .stats-container .row {
+    row-gap: 36px !important;
   }
 }
 
@@ -803,20 +815,20 @@
 @media (max-width: 575px) {
 
   .stats-section-bg {
-    padding: 50px 0 !important;
+    padding: 55px 0 !important;
   }
 
   .stat-graph-card {
-    padding-left: 14px !important;
-    gap: 12px !important;
+    padding-left: 12px !important;
+    gap: 10px !important;
   }
 
   .stat-number {
-    font-size: 28px !important;
+    font-size: 26px !important;
   }
 
   .stat-graph-content p {
-    font-size: 12.5px !important;
+    font-size: 12px !important;
   }
 
   h1,
