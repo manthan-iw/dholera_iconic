@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initAboutSlider();
   initAmenitiesSlider();
   initJourneySlider();
+  initSmoothScroll();
 });
 
 // About Us Section Interactive Slider
@@ -252,6 +253,30 @@ function initJourneySlider() {
         slidesPerView: 1.5,
         spaceBetween: 35,
       }
+    }
+  });
+}
+
+// Global Smooth Scroll Handler with Fixed Header Height Offset
+function initSmoothScroll() {
+  document.addEventListener("click", function (e) {
+    const link = e.target.closest('a[href^="#"]');
+    if (!link) return;
+
+    const targetId = link.getAttribute("href");
+    if (!targetId || targetId === "#") return;
+
+    const targetElement = document.querySelector(targetId);
+    if (targetElement) {
+      e.preventDefault();
+      const headerOffset = 90;
+      const elementPosition = targetElement.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
     }
   });
 }
