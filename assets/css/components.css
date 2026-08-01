@@ -351,44 +351,15 @@
 .icon-wrapper,
 .infra-icon-wrapper {
   position: relative;
-  width: 60px;
-  height: 60px;
-  margin: 0 auto 28px;
-  background: linear-gradient(180deg, #F2C777 0%, #E2A130 100%);
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 24px;
+  background: url('../images/starburst_badge.svg') no-repeat center / contain;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1;
   transition: transform 0.3s ease, filter 0.3s ease;
-
-  clip-path: polygon(50% 0%,
-      60% 8%,
-      72% 4%,
-      78% 16%,
-      92% 18%,
-      88% 32%,
-      100% 40%,
-      92% 50%,
-      100% 60%,
-      88% 68%,
-      92% 82%,
-      78% 84%,
-      72% 96%,
-      60% 92%,
-      50% 100%,
-      40% 92%,
-      28% 96%,
-      22% 84%,
-      8% 82%,
-      12% 68%,
-      0% 60%,
-      8% 50%,
-      0% 40%,
-      12% 32%,
-      8% 18%,
-      22% 16%,
-      28% 4%,
-      40% 8%);
 }
 
 .icon-wrapper i,
@@ -608,7 +579,7 @@
    FOOTER COMPONENT
    ========================================== */
 #footer-placeholder {
-  border-radius: 40px 40px 0 0;
+  border-radius: 25px 25px 0 0;
   margin-top: -40px;
   position: relative;
   z-index: 10;
