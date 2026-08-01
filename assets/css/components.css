@@ -1288,10 +1288,13 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  height: 760px;
+  min-height: 80vh;
+  min-height: 80dvh;
+  height: auto;
   display: flex;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 120px;
+  padding-bottom: 80px;
 }
 
 .hero-section.hero-about {
