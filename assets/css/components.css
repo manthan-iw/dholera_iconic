@@ -66,23 +66,27 @@
 /* ==========================================
    MOBILE DRAWER SYSTEM
    ========================================== */
+/* Mobile Top Dropdown Menu (Animates from Top) */
 .mobile-drawer {
   position: fixed;
-  top: 0;
-  right: -100%;
-  width: 320px;
-  height: 100vh;
+  top: -120%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
   background-color: var(--white);
   z-index: 1050;
-  box-shadow: -10px 0 40px rgba(0, 0, 0, 0.15);
-  padding: 30px 24px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
+  border-radius: 0 0 24px 24px;
+  padding: 24px 24px 32px 24px;
   display: flex;
   flex-direction: column;
-  transition: right 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: top 0.45s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .mobile-drawer.open {
-  right: 0;
+  top: 0;
 }
 
 .drawer-backdrop {
