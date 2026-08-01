@@ -73,16 +73,16 @@
   left: 0;
   right: 0;
   width: 100%;
-  max-height: 85vh;
+  max-height: 75vh;
   overflow-y: auto;
   background-color: var(--white);
   z-index: 1050;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
-  border-radius: 0 0 24px 24px;
-  padding: 24px 24px 32px 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  border-radius: 0 0 18px 18px;
+  padding: 16px 20px 20px 20px;
   display: flex;
   flex-direction: column;
-  transition: top 0.45s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: top 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .mobile-drawer.open {
@@ -111,7 +111,7 @@
 
 .mobile-drawer-header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  padding-bottom: 20px;
+  padding-bottom: 12px;
 }
 
 .drawer-close-btn {
@@ -127,12 +127,12 @@
 .mobile-drawer-nav .drawer-link {
   font-family: var(--font-switzer);
   font-weight: 500;
-  font-size: 18px;
+  font-size: 15px;
   text-transform: uppercase;
   color: var(--dark);
   text-decoration: none;
   display: block;
-  padding: 8px 0;
+  padding: 6px 0;
   transition: var(--transition-fast);
 }
 
