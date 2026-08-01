@@ -102,8 +102,8 @@ function initAmenitiesSlider() {
   const prevBtn = document.querySelector(".amenity-arrow-prev");
   const nextBtn = document.querySelector(".amenity-arrow-next");
 
-  const section = document.getElementById('amenities-section');
-  let bgSwapTimeout = null;
+  const layer1 = document.getElementById('amenitiesBgLayer1');
+  const layer2 = document.getElementById('amenitiesBgLayer2');
 
   if (!dots.length || !slideNum || !slideTitle || !slideDesc) return;
 
@@ -123,97 +123,119 @@ function initAmenitiesSlider() {
     {
       number: "03",
       title: "High-Speed Elevators",
-      image: "assets/images/lobby.jpg",
+      image: "assets/images/quality_finishes.jpg",
       desc: "Equipped with state-of-the-art intelligent elevator systems that minimize wait times and ensure smooth vertical transit. Features dedicated passenger lifts and separate service elevators for efficient operations."
     },
     {
       number: "04",
       title: "Conference & Boardrooms",
-      image: "assets/images/amenities_hero.jpg",
+      image: "assets/images/why_canvas.jpg",
       desc: "Fully equipped corporate meeting spaces with advanced audio-visual capabilities, high-speed connectivity, and ergonomic seating, designed for collaborative decision-making and seamless presentations."
     }
   ];
 
-  let currentSlide = 0;
+  // Preload all background images into browser memory to eliminate network load stutter/lag
+  slidesData.forEach(slide => {
+    const img = new Image();
+    img.src = slide.image;
+  });
 
-  // Crossfade the section background to a new image URL
+  let currentSlide = 0;
+  let activeLayerIndex = 1;
+
+  // Seamless dual-layer crossfade background swap
   function swapAmenitiesBg(imageUrl) {
-    if (!section) return;
-    clearTimeout(bgSwapTimeout);
-    section.style.setProperty('--next-bg', `url('${imageUrl}')`);
-    section.classList.add('bg-transitioning');
-    bgSwapTimeout = setTimeout(() => {
-      section.style.backgroundImage = `url('${imageUrl}')`;
-      section.classList.remove('bg-transitioning');
-    }, 700);
+    if (!layer1 || !layer2) return;
+
+    const currLayer = activeLayerIndex === 1 ? layer1 : layer2;
+    const nextLayer = activeLayerIndex === 1 ? layer2 : layer1;
+
+    nextLayer.style.backgroundImage = `url('${imageUrl}')`;
+    nextLayer.classList.add('active');
+    currLayer.classList.remove('active');
+
+    activeLayerIndex = activeLayerIndex === 1 ? 2 : 1;
   }
 
   function showSlide(index) {
     if (index < 0 || index >= slidesData.length) return;
 
-    // Deactivate previous dot
+    // Update dots
     dots.forEach(dot => dot.classList.remove("active"));
+    if (dots[index]) dots[index].classList.add("active");
 
-    // Add fade-out animation to content
+    // Fade out text elements inside overlay card
     const elementsToAnimate = [slideNum, slideTitle, slideDesc];
     elementsToAnimate.forEach(el => {
-      el.style.opacity = "0";
-      el.style.transform = "translateY(10px)";
+      if (el) {
+        el.style.opacity = "0";
+        el.style.transform = "translateY(8px)";
+        el.style.transition = "opacity 0.25s ease, transform 0.25s ease";
+      }
     });
 
+    // Instantly initiate background crossfade
+    swapAmenitiesBg(slidesData[index].image);
+
     setTimeout(() => {
-      // Update content
-      slideNum.textContent = slidesData[index].number;
-      slideTitle.textContent = slidesData[index].title;
-      slideDesc.textContent = slidesData[index].desc;
+      // Update text content
+      if (slideNum) slideNum.textContent = slidesData[index].number;
+      if (slideTitle) slideTitle.textContent = slidesData[index].title;
+      if (slideDesc) slideDesc.textContent = slidesData[index].desc;
 
-      // Swap section background for this slide
-      swapAmenitiesBg(slidesData[index].image);
-
-      // Activate dot
-      dots[index].classList.add("active");
       currentSlide = index;
 
-      // Add fade-in animation
+      // Fade text elements back in
       elementsToAnimate.forEach(el => {
-        el.style.opacity = "1";
-        el.style.transform = "translateY(0)";
+        if (el) {
+          el.style.opacity = "1";
+          el.style.transform = "translateY(0)";
+        }
       });
     }, 250);
   }
 
-  // Add click listeners to dots
+  // Dots navigation
   dots.forEach(dot => {
     dot.addEventListener("click", () => {
       const slideIndex = parseInt(dot.getAttribute("data-slide"));
       if (slideIndex === currentSlide) return;
       showSlide(slideIndex);
-      clearInterval(autoPlayInterval);
+      resetAutoPlay();
     });
   });
 
-  // Add click listeners to arrows
+  // Previous button
   if (prevBtn) {
     prevBtn.addEventListener("click", () => {
-      let prev = (currentSlide - 1 + slidesData.length) % slidesData.length;
-      showSlide(prev);
-      clearInterval(autoPlayInterval);
+      let prevIndex = (currentSlide - 1 + slidesData.length) % slidesData.length;
+      showSlide(prevIndex);
+      resetAutoPlay();
     });
   }
 
+  // Next button
   if (nextBtn) {
     nextBtn.addEventListener("click", () => {
-      let next = (currentSlide + 1) % slidesData.length;
-      showSlide(next);
-      clearInterval(autoPlayInterval);
+      let nextIndex = (currentSlide + 1) % slidesData.length;
+      showSlide(nextIndex);
+      resetAutoPlay();
     });
   }
 
-  // Optional: Auto play every 6 seconds
+  // Auto play every 6 seconds
   let autoPlayInterval = setInterval(() => {
     let next = (currentSlide + 1) % slidesData.length;
     showSlide(next);
   }, 6000);
+
+  function resetAutoPlay() {
+    clearInterval(autoPlayInterval);
+    autoPlayInterval = setInterval(() => {
+      let next = (currentSlide + 1) % slidesData.length;
+      showSlide(next);
+    }, 6000);
+  }
 }
 
 // The ICONIC Journey Section Swiper.js Initialization

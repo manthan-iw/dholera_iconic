@@ -1578,7 +1578,7 @@ body.inner-page .hero-section::before,
 
 .amenities-section-bg {
   position: relative;
-  background: url('../images/amenities_hero.jpg') no-repeat center center/cover;
+  background-color: #121820;
   padding: 80px 0;
   min-height: 560px;
   display: flex;
@@ -1586,21 +1586,19 @@ body.inner-page .hero-section::before,
   overflow: hidden;
 }
 
-.amenities-section-bg::before {
-  content: '';
+.amenities-bg-layer {
   position: absolute;
   inset: 0;
-  background-image: var(--next-bg, none);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 0;
-  transition: opacity 0.7s ease;
+  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 0;
   pointer-events: none;
 }
 
-.amenities-section-bg.bg-transitioning::before {
+.amenities-bg-layer.active {
   opacity: 1;
 }
 
