@@ -420,25 +420,35 @@
     background-image: none !important;
   }
 
-  /* Hide all vertical dividers on mobile */
+  /* Hide all grid background pseudo lines on mobile */
   .infra-grid::before,
   .infra-grid::after {
     display: none !important;
   }
 
   .infra-card {
-    padding: 36px 20px !important;
-    border-bottom: 1px solid rgba(2, 89, 165, 0.1) !important;
-  }
-
-  .infra-card:last-child {
+    padding: 44px 20px !important;
+    position: relative !important;
     border-bottom: none !important;
   }
 
-  .infra-card::before,
-  .infra-card::after {
+  .infra-card::before {
     display: none !important;
-    content: none !important;
+  }
+
+  /* Centered Gold Gradient Accent Line Divider */
+  .infra-card:not(:last-child)::after {
+    content: '' !important;
+    display: block !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 140px !important;
+    height: 2px !important;
+    border-radius: 100px !important;
+    background: linear-gradient(90deg, rgba(2, 89, 165, 0) 0%, rgba(214, 147, 42, 0.85) 50%, rgba(2, 89, 165, 0) 100%) !important;
+    box-shadow: 0 0 10px rgba(214, 147, 42, 0.3) !important;
   }
 }
 
@@ -1398,7 +1408,7 @@ body.inner-page .hero-section::before,
 }
 
 .hero-title {
-  max-width: 580px;
+  max-width: 640px;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
 }
 
