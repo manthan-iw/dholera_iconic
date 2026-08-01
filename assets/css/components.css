@@ -1327,7 +1327,7 @@ position: absolute;
     transform: none !important;
     max-width: 100% !important;
     margin-top: 20px !important;
-    padding: 0 !important;
+    padding: 0 16px !important;
     background: transparent !important;
     border: none !important;
     box-shadow: none !important;
