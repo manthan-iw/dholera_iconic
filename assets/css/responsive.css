@@ -689,6 +689,11 @@
     height: 240px !important;
   }
 
+  .developer-img-wrapper {
+    height: 240px !important;
+    min-height: 200px !important;
+  }
+
   .amenities-slider-card {
     padding: 24px 20px !important;
   }
@@ -939,6 +944,11 @@
 
   .projects-overview-banner {
     height: 170px !important;
+  }
+
+  .developer-img-wrapper {
+    height: 180px !important;
+    min-height: 160px !important;
   }
 
   .stats-section-bg {
