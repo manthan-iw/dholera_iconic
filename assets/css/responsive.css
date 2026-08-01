@@ -515,6 +515,24 @@
     padding-top: 100px !important;
   }
 
+  /* Mobile Dark Hero Overlay System for Max Text Contrast */
+  .hero-section::before,
+  body.inner-page .hero-section::before,
+  .hero-section.hero-about::before,
+  .hero-section.hero-projects::before,
+  .hero-section.hero-amenities::before,
+  .hero-section.hero-location::before,
+  .hero-section.hero-contact::before,
+  .hero-section.hero-whydholera::before {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.72) 0%, rgba(0, 0, 0, 0.85) 100%) !important;
+  }
+
+  .hero-title,
+  .hero-desc {
+    color: #FFFFFF !important;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6) !important;
+  }
+
   .slide-number {
     font-size: 60px !important;
   }
