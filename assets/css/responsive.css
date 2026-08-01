@@ -106,17 +106,10 @@
     height: 500px !important;
   }
 
-  /* Header & Navbar Solid White on Mobile Viewports */
-  .navbar,
-  .home-page .navbar {
-    background-color: #FFFFFF !important;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+  /* Header & Navbar */
+  .navbar {
     padding-top: 14px !important;
     padding-bottom: 14px !important;
-  }
-
-  .burger-bar {
-    background-color: var(--dark) !important;
   }
 
   .logo-img {
@@ -531,7 +524,7 @@
   .hero-section.hero-location::before,
   .hero-section.hero-contact::before,
   .hero-section.hero-whydholera::before {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.72) 0%, rgba(0, 0, 0, 0.85) 100%) !important;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.72) 0%, rgb(0 0 0 / 41%) 100%) !important;
   }
 
   .hero-title,
