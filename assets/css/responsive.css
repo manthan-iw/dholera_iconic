@@ -540,11 +540,38 @@
 
   /* What We Offer Section */
   .offer-card {
-    height: 380px !important;
+    height: 480px !important;
+    min-height: 480px !important;
+  }
+
+  .offer-card-header {
+    padding: 28px 24px 0 24px !important;
+  }
+
+  .offer-card-hover-content {
+    top: 90px !important;
+    left: 24px !important;
+    right: 24px !important;
+    bottom: 24px !important;
+  }
+
+  .offer-card-desc {
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+    margin-bottom: 10px !important;
+  }
+
+  .space-checklist {
+    gap: 6px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .space-check-item {
+    font-size: 13px !important;
   }
 
   .offer-card-image-wrapper {
-    height: 230px !important;
+    height: 280px !important;
   }
 
   /* Amenities Section */
@@ -677,7 +704,8 @@
   }
 
   .offer-card {
-    height: auto !important;
+    height: 480px !important;
+    min-height: 480px !important;
     margin-top: 0 !important;
   }
 
@@ -877,7 +905,8 @@
   }
 
   .offer-card {
-    height: auto !important;
+    height: 480px !important;
+    min-height: 480px !important;
     margin-top: 0 !important;
   }
 
