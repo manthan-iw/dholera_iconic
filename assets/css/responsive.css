@@ -14,24 +14,29 @@
   /* Typography */
   h1,
   .h1-title {
-    font-size: 60px !important;
+    font-size: 64px !important;
     line-height: 1.15 !important;
   }
 
   h2,
-  .h1-title {
+  .h2-title {
     font-size: 48px !important;
     line-height: 1.18 !important;
   }
 
   h3,
   .h3-title {
-    font-size: 36px !important;
+    font-size: 32px !important;
   }
 
   h4,
   .h4-title {
     font-size: 24px !important;
+  }
+
+  h5,
+  .h5-title {
+    font-size: 19px !important;
   }
 
   p.fs-4 {
@@ -54,7 +59,6 @@
     height: 680px !important;
     padding-top: 130px !important;
   }
-
 
   .slide-number {
     font-size: 100px !important;
@@ -82,7 +86,6 @@
   /* What We Offer Section */
   .offer-card {
     height: 480px !important;
-    /* padding: 40px 32px !important; */
   }
 
   .offer-card-image-wrapper {
@@ -165,19 +168,24 @@
   }
 
   h2,
-  .h1-title {
-    font-size: 44px !important;
+  .h2-title {
+    font-size: 42px !important;
     line-height: 1.18 !important;
   }
 
   h3,
   .h3-title {
-    font-size: 32px !important;
+    font-size: 28px !important;
   }
 
   h4,
   .h4-title {
     font-size: 22px !important;
+  }
+
+  h5,
+  .h5-title {
+    font-size: 18px !important;
   }
 
   p.fs-4 {
@@ -191,7 +199,6 @@
     padding: 60px 0 !important;
   }
 
-
   .stats-section-bg {
     padding: 150px 0 !important;
   }
@@ -201,7 +208,6 @@
     height: 640px !important;
     padding-top: 120px !important;
   }
-
 
   .slide-number {
     font-size: 80px !important;
@@ -229,7 +235,6 @@
   /* What We Offer Section */
   .offer-card {
     height: 440px !important;
-    /* padding: 30px !important; */
   }
 
   .offer-card-image-wrapper {
@@ -308,24 +313,29 @@
   /* Typography */
   h1,
   .h1-title {
-    font-size: 52px !important;
+    font-size: 48px !important;
     line-height: 1.15 !important;
   }
 
   h2,
-  .h1-title {
-    font-size: 40px !important;
+  .h2-title {
+    font-size: 38px !important;
     line-height: 1.18 !important;
   }
 
   h3,
   .h3-title {
-    font-size: 30px !important;
+    font-size: 26px !important;
   }
 
   h4,
   .h4-title {
     font-size: 20px !important;
+  }
+
+  h5,
+  .h5-title {
+    font-size: 17px !important;
   }
 
   p.fs-4 {
@@ -379,7 +389,6 @@
   /* What We Offer Section */
   .offer-card {
     height: 410px !important;
-    /* padding: 24px 20px !important; */
   }
 
   .offer-card-image-wrapper {
@@ -460,24 +469,29 @@
   /* Typography */
   h1,
   .h1-title {
-    font-size: 46px !important;
+    font-size: 42px !important;
     line-height: 1.15 !important;
   }
 
   h2,
-  .h1-title {
-    font-size: 36px !important;
+  .h2-title {
+    font-size: 34px !important;
     line-height: 1.18 !important;
   }
 
   h3,
   .h3-title {
-    font-size: 28px !important;
+    font-size: 24px !important;
   }
 
   h4,
   .h4-title {
-    font-size: 19px !important;
+    font-size: 18px !important;
+  }
+
+  h5,
+  .h5-title {
+    font-size: 16px !important;
   }
 
   p.fs-4 {
@@ -527,7 +541,6 @@
   /* What We Offer Section */
   .offer-card {
     height: 380px !important;
-    /* padding: 20px 16px !important; */
   }
 
   .offer-card-image-wrapper {
@@ -564,7 +577,6 @@
 
   .navbar-nav .nav-link {
     font-size: 13px !important;
-    /* padding: 4px 6px !important; */
   }
 
   .navbar-nav .nav-link::after {
@@ -596,25 +608,34 @@
 @media (max-width: 991px) {
 
   h1,
-  .h1-title,
-  h2,
   .h1-title {
-    font-size: 42px !important;
+    font-size: 36px !important;
+    line-height: 1.2 !important;
+  }
+
+  h2,
+  .h2-title {
+    font-size: 30px !important;
     line-height: 1.2 !important;
   }
 
   h3,
   .h3-title {
-    font-size: 32px !important;
+    font-size: 22px !important;
   }
 
   h4,
   .h4-title {
-    font-size: 24px !important;
+    font-size: 18px !important;
+  }
+
+  h5,
+  .h5-title {
+    font-size: 15px !important;
   }
 
   p.fs-4 {
-    font-size: 1.1rem !important;
+    font-size: 1.05rem !important;
   }
 
   .section-padding,
@@ -669,20 +690,30 @@
 @media (max-width: 767px) {
 
   h1,
-  .h1-title,
-  h2,
   .h1-title {
-    font-size: 36px !important;
+    font-size: 32px !important;
+    line-height: 1.2 !important;
+  }
+
+  h2,
+  .h2-title {
+    font-size: 26px !important;
+    line-height: 1.2 !important;
   }
 
   h3,
   .h3-title {
-    font-size: 28px !important;
+    font-size: 20px !important;
   }
 
   h4,
   .h4-title {
-    font-size: 20px !important;
+    font-size: 17px !important;
+  }
+
+  h5,
+  .h5-title {
+    font-size: 14px !important;
   }
 
   .section-padding,
@@ -739,20 +770,30 @@
 @media (max-width: 575px) {
 
   h1,
-  .h1-title,
-  h2,
   .h1-title {
-    font-size: 30px !important;
+    font-size: 28px !important;
+    line-height: 1.2 !important;
+  }
+
+  h2,
+  .h2-title {
+    font-size: 24px !important;
+    line-height: 1.2 !important;
   }
 
   h3,
   .h3-title {
-    font-size: 24px !important;
+    font-size: 18px !important;
   }
 
   h4,
   .h4-title {
-    font-size: 18px !important;
+    font-size: 16px !important;
+  }
+
+  h5,
+  .h5-title {
+    font-size: 14px !important;
   }
 
   .tag-capsule {
@@ -794,10 +835,20 @@
 @media (max-width: 375px) {
 
   h1,
-  .h1-title,
-  h2,
   .h1-title {
-    font-size: 26px !important;
+    font-size: 24px !important;
+    line-height: 1.2 !important;
+  }
+
+  h2,
+  .h2-title {
+    font-size: 22px !important;
+    line-height: 1.2 !important;
+  }
+
+  h3,
+  .h3-title {
+    font-size: 17px !important;
   }
 
   .btn-cta,
