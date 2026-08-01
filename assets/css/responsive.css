@@ -777,6 +777,15 @@
     height: 36px !important;
     font-size: 16px !important;
   }
+
+  .floor-tabs-container {
+    gap: 8px !important;
+  }
+
+  .floor-tab {
+    padding: 8px 16px !important;
+    font-size: 13.5px !important;
+  }
 }
 
 /* Medium viewports (up to 767px - Mobile Phones) */
@@ -906,10 +915,35 @@
     padding-bottom: 14px !important;
     margin-bottom: 14px !important;
   }
+
+  .floor-tabs-container {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 8px !important;
+    margin-bottom: 24px !important;
+  }
+
+  .floor-tab {
+    width: 100% !important;
+    text-align: center !important;
+    padding: 8px 6px !important;
+    font-size: 12.5px !important;
+    white-space: nowrap !important;
+  }
 }
 
 /* Small viewports (up to 575px - Compact Mobile) */
 @media (max-width: 575px) {
+
+  .floor-tabs-container {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 6px !important;
+  }
+
+  .floor-tab {
+    padding: 6px 4px !important;
+    font-size: 11px !important;
+  }
 
   .faq-accordion-header {
     font-size: 15px !important;
