@@ -686,7 +686,6 @@
 .specs-checklist {
   display: flex;
   flex-direction: column;
-  gap: 16px;
 }
 
 .check-row {
@@ -867,9 +866,9 @@
 }
 
 .developer-img-wrapper {
-  min-height: 440px;
   border-radius: var(--radius-lg);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+  width: 100%;
 }
 
 /* Responsive Hero Scaling */
