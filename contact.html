@@ -420,16 +420,21 @@
 
       if (!body) return;
 
-      // Toggle active header class
-      header.classList.toggle("active");
+      const isActive = header.classList.contains("active");
 
-      // Expand/Collapse body with slide toggle effect
-      if (header.classList.contains("active")) {
-        body.style.display = "block";
-        icon.className = "bi bi-dash";
-      } else {
-        body.style.display = "none";
-        icon.className = "bi bi-plus";
+      // Close other accordions for clean accordion UX
+      document.querySelectorAll(".faq-accordion-header").forEach(h => {
+        h.classList.remove("active");
+        const b = h.nextElementSibling;
+        if (b) b.style.maxHeight = null;
+        const ic = h.querySelector(".faq-chevron i");
+        if (ic) ic.className = "bi bi-plus";
+      });
+
+      if (!isActive) {
+        header.classList.add("active");
+        body.style.maxHeight = body.scrollHeight + "px";
+        if (icon) icon.className = "bi bi-dash";
       }
     }
   </script>

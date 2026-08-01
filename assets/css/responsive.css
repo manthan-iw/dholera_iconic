@@ -763,6 +763,20 @@
     font-size: 11px !important;
     line-height: 1.25 !important;
   }
+
+  .faq-accordion-header {
+    font-size: 18px !important;
+  }
+
+  .faq-accordion-body {
+    font-size: 14.5px !important;
+  }
+
+  .faq-chevron {
+    width: 36px !important;
+    height: 36px !important;
+    font-size: 16px !important;
+  }
 }
 
 /* Medium viewports (up to 767px - Mobile Phones) */
@@ -872,10 +886,45 @@
   .stat-graph-content p {
     font-size: 10.5px !important;
   }
+
+  .faq-accordion-header {
+    font-size: 16px !important;
+    line-height: 1.35 !important;
+  }
+
+  .faq-accordion-body {
+    font-size: 13.5px !important;
+  }
+
+  .faq-chevron {
+    width: 32px !important;
+    height: 32px !important;
+    font-size: 15px !important;
+  }
+
+  .faq-accordion-item {
+    padding-bottom: 14px !important;
+    margin-bottom: 14px !important;
+  }
 }
 
 /* Small viewports (up to 575px - Compact Mobile) */
 @media (max-width: 575px) {
+
+  .faq-accordion-header {
+    font-size: 15px !important;
+    line-height: 1.35 !important;
+  }
+
+  .faq-accordion-body {
+    font-size: 12.5px !important;
+  }
+
+  .faq-chevron {
+    width: 28px !important;
+    height: 28px !important;
+    font-size: 14px !important;
+  }
 
   h1,
   .h1-title {
