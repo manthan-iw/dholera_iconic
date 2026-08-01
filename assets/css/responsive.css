@@ -670,7 +670,11 @@
   }
 
   .offer-card-image-wrapper {
-    height: 260px !important;
+    height: 200px !important;
+  }
+
+  .projects-overview-banner {
+    height: 240px !important;
   }
 
   .amenities-slider-card {
@@ -682,7 +686,7 @@
   }
 
   #architecture-section .overflow-hidden {
-    height: 320px !important;
+    height: 260px !important;
   }
 
   /* Stats Section Mobile 4-in-a-row Layout */
@@ -810,11 +814,15 @@
   }
 
   .offer-card-image-wrapper {
-    height: 220px !important;
+    height: 170px !important;
+  }
+
+  .projects-overview-banner {
+    height: 200px !important;
   }
 
   #architecture-section .overflow-hidden {
-    height: 260px !important;
+    height: 200px !important;
   }
 
   .copyright-row {
@@ -835,6 +843,14 @@
 
 /* Small viewports (up to 575px) */
 @media (max-width: 575px) {
+
+  .offer-card-image-wrapper {
+    height: 150px !important;
+  }
+
+  .projects-overview-banner {
+    height: 170px !important;
+  }
 
   .stats-section-bg {
     padding: 50px 0 !important;

@@ -1270,6 +1270,10 @@
   box-shadow: 0 4px 15px rgba(2, 89, 165, 0.04);
 }
 
+.projects-overview-banner {
+  height: 520px;
+}
+
 @media (max-width: 991px) {
   .project-banner-wrapper {
     box-shadow: none;
