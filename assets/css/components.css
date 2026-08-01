@@ -479,7 +479,7 @@
 }
 
 .offer-card-image-wrapper {
-  height: 340px;
+  height: 380px;
   margin-top: auto;
   display: flex;
   align-items: flex-end;
@@ -487,13 +487,16 @@
   overflow: hidden;
   position: relative;
   z-index: 1;
+  width: 100%;
   transition: transform 0.65s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.5s ease;
 }
 
 .offer-card-image {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  max-height: 360px;
   object-fit: contain;
+  object-position: bottom center;
   transition: transform 0.65s cubic-bezier(0.25, 1, 0.5, 1);
 }
 

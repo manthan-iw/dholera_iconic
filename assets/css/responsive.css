@@ -571,7 +571,11 @@
   }
 
   .offer-card-image-wrapper {
-    height: 280px !important;
+    height: 360px !important;
+  }
+
+  .offer-card-image {
+    max-height: 340px !important;
   }
 
   /* Amenities Section */
@@ -710,7 +714,11 @@
   }
 
   .offer-card-image-wrapper {
-    height: 200px !important;
+    height: 360px !important;
+  }
+
+  .offer-card-image {
+    max-height: 340px !important;
   }
 
   .projects-overview-banner {
@@ -911,7 +919,11 @@
   }
 
   .offer-card-image-wrapper {
-    height: 170px !important;
+    height: 360px !important;
+  }
+
+  .offer-card-image {
+    max-height: 340px !important;
   }
 
   .projects-overview-banner {
