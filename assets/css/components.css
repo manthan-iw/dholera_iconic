@@ -387,22 +387,14 @@
 @media (max-width: 991px) {
   .infra-grid {
     grid-template-columns: repeat(2, 1fr);
-    /* Two horizontal dividers at rows 1|2 and 2|3 in 3-row layout */
-    background-image:
-      linear-gradient(90deg,
+    background-image: linear-gradient(90deg,
         rgba(2, 89, 165, 0),
-        rgba(2, 89, 165, 0.35) 20%,
-        rgba(2, 89, 165, 0.8) 50%,
-        rgba(2, 89, 165, 0.35) 80%,
-        rgba(2, 89, 165, 0)),
-      linear-gradient(90deg,
-        rgba(2, 89, 165, 0),
-        rgba(2, 89, 165, 0.35) 20%,
-        rgba(2, 89, 165, 0.8) 50%,
-        rgba(2, 89, 165, 0.35) 80%,
+        rgba(2, 89, 165, 0.2) 20%,
+        rgba(2, 89, 165, 0.5) 50%,
+        rgba(2, 89, 165, 0.2) 80%,
         rgba(2, 89, 165, 0));
-    background-position: 0 33.333%, 0 66.667%;
-    background-size: 100% 2px, 100% 2px;
+    background-position: 0 50%;
+    background-size: 100% 1px;
     background-repeat: no-repeat;
   }
 
@@ -417,42 +409,36 @@
   }
 
   .infra-card {
-    padding: 50px 30px;
+    padding: 40px 24px;
   }
 }
 
 @media (max-width: 767px) {
   .infra-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
+    background: none !important;
+    background-image: none !important;
   }
 
   /* Hide all vertical dividers on mobile */
   .infra-grid::before,
   .infra-grid::after {
-    display: none;
-  }
-
-  .infra-card {
-    padding: 40px 20px;
-  }
-
-  /* Override row-1 ::before — not needed here */
-  .infra-card::before {
     display: none !important;
   }
 
-  /* Simple horizontal divider between each card using ::after */
-  .infra-card:not(:last-child)::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg,
-        rgba(2, 89, 165, 0),
-        rgba(2, 89, 165, 0.4) 50%,
-        rgba(2, 89, 165, 0));
+  .infra-card {
+    padding: 36px 20px !important;
+    border-bottom: 1px solid rgba(2, 89, 165, 0.1) !important;
+  }
+
+  .infra-card:last-child {
+    border-bottom: none !important;
+  }
+
+  .infra-card::before,
+  .infra-card::after {
+    display: none !important;
+    content: none !important;
   }
 }
 
