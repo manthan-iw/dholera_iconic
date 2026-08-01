@@ -194,10 +194,10 @@
   transition: var(--transition-normal);
 }
 
-/* Unified Button Arrow Rotation on Hover */
+/* Unified Button Arrow Rotation on Hover (Tilts Up-Right ↗) */
 .btn-enquire:hover .btn-arrow-circle,
 .btn-cta:hover .btn-arrow-circle {
-  transform: rotate(45deg);
+  transform: rotate(-45deg);
 }
 
 /* ==========================================
@@ -1288,13 +1288,10 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  min-height: 80vh;
-  min-height: 80dvh;
-  height: auto;
+  height: 760px;
   display: flex;
   align-items: center;
-  padding-top: 120px;
-  padding-bottom: 80px;
+  padding-top: 100px;
 }
 
 .hero-section.hero-about {
