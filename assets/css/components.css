@@ -1315,19 +1315,34 @@ position: absolute;
 @media (max-width: 991px) {
   .project-banner-wrapper {
     box-shadow: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
   }
 
-
+  .project-banner-overlay {
+    position: relative !important;
+    top: 0 !important;
+    right: 0 !important;
+    transform: none !important;
+    max-width: 100% !important;
+    margin-top: 20px !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
 
   .project-banner-img {
-    height: 320px;
-    min-height: 280px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    height: 240px !important;
+    min-height: 200px !important;
+    border-radius: 16px !important;
+    width: 100% !important;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08) !important;
   }
 
   .quote-card {
-    padding: 16px 20px;
+    padding: 16px 20px !important;
   }
 }
 
