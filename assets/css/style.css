@@ -58,6 +58,9 @@ body {
   color: var(--dark);
   background-color: var(--white);
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 .text-dark {
