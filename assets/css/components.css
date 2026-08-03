@@ -1039,38 +1039,38 @@
 }
 
 /* ==========================================
-   NEIGHBOUR LOGO CARD COMPONENT
+   NEIGHBOUR LOGO CARD COMPONENT (Figma Style: Clean transparent logos, large format)
    ========================================== */
 .neighbour-logo-wrapper {
-  background-color: var(--white);
-  border: 1px solid #E2E8F0;
-  border-radius: 16px;
-  padding: 20px 24px;
+  background: transparent;
+  border: none;
+  padding: 10px 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  min-height: auto;
+  box-shadow: none;
   transition: var(--transition-normal);
 }
 
 .neighbour-logo-wrapper:hover {
-  border-color: #0259A5;
-  box-shadow: 0 10px 25px rgba(2, 89, 165, 0.08);
-  transform: translateY(-3px);
+  border: none;
+  box-shadow: none;
+  transform: translateY(-2px);
 }
 
 .neighbour-logo-img {
-  max-width: 140px;
-  max-height: 44px;
+  max-width: 210px;
+  max-height: 65px;
   width: auto;
   height: auto;
   object-fit: contain;
   transition: var(--transition-normal);
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.04));
 }
 
 .neighbour-logo-wrapper:hover .neighbour-logo-img {
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
 /* ==========================================
@@ -1081,15 +1081,15 @@
   white-space: nowrap;
   position: relative;
   width: 100%;
-  padding: 10px 0;
-  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  padding: 15px 0;
+  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
 }
 
 .logo-marquee-track {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 40px;
   width: max-content;
   animation: logoMarqueeScroll 25s linear infinite;
 }
@@ -1099,7 +1099,7 @@
 }
 
 .logo-marquee-item {
-  width: 200px;
+  width: 240px;
   flex-shrink: 0;
 }
 

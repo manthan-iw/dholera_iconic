@@ -1421,14 +1421,14 @@
   }
 }
 
-/* Mobile Logo Slider (No white background cards, just logo images, compact spacing) */
+/* Mobile Logo Slider (No white background cards, just transparent large logo images) */
 @media (max-width: 991px) {
   .logo-marquee-track {
-    gap: 16px !important;
+    gap: 28px !important;
   }
 
   .logo-marquee-item {
-    width: 120px !important;
+    width: 170px !important;
     flex-shrink: 0 !important;
   }
 
@@ -1437,29 +1437,29 @@
     background-color: transparent !important;
     border: none !important;
     border-radius: 0 !important;
-    padding: 6px 0 !important;
+    padding: 8px 0 !important;
     min-height: auto !important;
     box-shadow: none !important;
   }
 
   .neighbour-logo-img {
-    max-width: 110px !important;
-    max-height: 38px !important;
+    max-width: 155px !important;
+    max-height: 50px !important;
   }
 }
 
 @media (max-width: 575px) {
   .logo-marquee-track {
-    gap: 12px !important;
+    gap: 20px !important;
   }
 
   .logo-marquee-item {
-    width: 100px !important;
+    width: 140px !important;
   }
 
   .neighbour-logo-img {
-    max-width: 95px !important;
-    max-height: 32px !important;
+    max-width: 130px !important;
+    max-height: 44px !important;
   }
 }
 
