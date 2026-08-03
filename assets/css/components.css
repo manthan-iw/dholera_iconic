@@ -1798,46 +1798,53 @@ body.inner-page .hero-section::before,
 
 .journeySwiper {
   overflow: visible !important;
-  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 
 .journeySwiper .swiper-slide {
-  transition: opacity 0.5s ease;
-  opacity: 0.4;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.5s ease;
+  transform: scale(0.86);
+  transform-origin: center center;
+  opacity: 0.5;
   height: auto;
 }
 
 .journeySwiper .swiper-slide-active {
   opacity: 1 !important;
+  transform: scale(1) !important;
+  z-index: 5;
 }
 
-.journeySwiper .swiper-slide-next {
-  opacity: 0.65 !important;
+.journeySwiper .swiper-slide-active .journey-card {
+  box-shadow: 0 20px 45px rgba(2, 89, 165, 0.12);
+  border-color: rgba(2, 89, 165, 0.2);
 }
 
 .journey-card {
-  background: #F8FAFC;
+  background: #FFFFFF;
   border-radius: var(--radius-lg);
   overflow: hidden;
-  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   border: 1px solid #E2E8F0;
-  transition: var(--transition-normal);
+  transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .journey-card img {
   width: 100%;
-  height: 320px;
+  height: 340px;
   object-fit: cover;
   display: block;
 }
 
 .journey-card-body {
-  padding: 24px 28px;
+  padding: 28px 32px;
 }
 
 .journey-year-span {
   color: #0259A5 !important;
-  font-size: 38px;
+  font-size: 42px;
+  font-weight: 600;
 }
 
 .journey-arrow-btn {

@@ -1615,3 +1615,26 @@
     row-gap: 16px !important;
   }
 }
+
+/* Journey Slider Active Scale-Up Responsive System */
+@media (max-width: 767.98px) {
+  .journeySwiper .swiper-slide {
+    transform: scale(0.9) !important;
+  }
+
+  .journeySwiper .swiper-slide-active {
+    transform: scale(1) !important;
+  }
+
+  .journey-card img {
+    height: 240px !important;
+  }
+
+  .journey-card-body {
+    padding: 20px 22px !important;
+  }
+
+  .journey-year-span {
+    font-size: 32px !important;
+  }
+}
