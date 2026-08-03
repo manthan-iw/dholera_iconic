@@ -606,42 +606,47 @@
 
   /* What We Offer Section */
   .offer-card {
-    height: 480px !important;
-    min-height: 480px !important;
+    height: 360px !important;
+    min-height: 360px !important;
   }
 
   .offer-card-header {
-    padding: 28px 24px 0 24px !important;
+    padding: 24px 20px 0 20px !important;
   }
 
   .offer-card-hover-content {
-    top: 90px !important;
-    left: 24px !important;
-    right: 24px !important;
-    bottom: 24px !important;
+    top: 75px !important;
+    left: 20px !important;
+    right: 20px !important;
+    bottom: 20px !important;
   }
 
   .offer-card-desc {
     font-size: 13px !important;
-    line-height: 1.5 !important;
-    margin-bottom: 10px !important;
+    line-height: 1.45 !important;
+    margin-bottom: 8px !important;
   }
 
   .space-checklist {
-    gap: 6px !important;
-    margin-bottom: 12px !important;
+    gap: 4px !important;
+    margin-bottom: 10px !important;
   }
 
   .space-check-item {
-    font-size: 13px !important;
+    font-size: 12.5px !important;
   }
 
   .offer-card-image-wrapper {
-    height: 360px !important;
+    height: 280px !important;
   }
 
   .offer-card-image {
-    max-height: 340px !important;
+    width: 115% !important;
+    max-width: 115% !important;
+    height: auto !important;
+    max-height: 280px !important;
+    object-fit: contain !important;
+    object-position: bottom center !important;
   }
 
   /* Amenities Section */
@@ -786,17 +791,22 @@
   }
 
   .offer-card {
-    height: 480px !important;
-    min-height: 480px !important;
+    height: 360px !important;
+    min-height: 360px !important;
     margin-top: 0 !important;
   }
 
   .offer-card-image-wrapper {
-    height: 360px !important;
+    height: 280px !important;
   }
 
   .offer-card-image {
-    max-height: 340px !important;
+    width: 115% !important;
+    max-width: 115% !important;
+    height: auto !important;
+    max-height: 280px !important;
+    object-fit: contain !important;
+    object-position: bottom center !important;
   }
 
   .projects-overview-banner {
@@ -1003,17 +1013,22 @@
   }
 
   .offer-card {
-    height: 480px !important;
-    min-height: 480px !important;
+    height: 360px !important;
+    min-height: 360px !important;
     margin-top: 0 !important;
   }
 
   .offer-card-image-wrapper {
-    height: 360px !important;
+    height: 280px !important;
   }
 
   .offer-card-image {
-    max-height: 340px !important;
+    width: 115% !important;
+    max-width: 115% !important;
+    height: auto !important;
+    max-height: 280px !important;
+    object-fit: contain !important;
+    object-position: bottom center !important;
   }
 
   .projects-overview-banner {
