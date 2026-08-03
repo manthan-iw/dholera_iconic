@@ -1409,3 +1409,45 @@
     padding: 10px 8px !important;
   }
 }
+
+/* Mobile Logo Slider (No white background cards, just logo images, compact spacing) */
+@media (max-width: 991px) {
+  .logo-marquee-track {
+    gap: 16px !important;
+  }
+
+  .logo-marquee-item {
+    width: 120px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .neighbour-logo-wrapper {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 6px 0 !important;
+    min-height: auto !important;
+    box-shadow: none !important;
+  }
+
+  .neighbour-logo-img {
+    max-width: 110px !important;
+    max-height: 38px !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .logo-marquee-track {
+    gap: 12px !important;
+  }
+
+  .logo-marquee-item {
+    width: 100px !important;
+  }
+
+  .neighbour-logo-img {
+    max-width: 95px !important;
+    max-height: 32px !important;
+  }
+}
