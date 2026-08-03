@@ -1353,3 +1353,59 @@
     white-space: nowrap !important;
   }
 }
+
+/* Responsive Smart Comparison Table & Stable Slider Content Height */
+@media (max-width: 991px) {
+  .infra-slide-content-wrapper {
+    min-height: 200px !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .infra-slide-content-wrapper {
+    min-height: 220px !important;
+  }
+
+  .comp-table {
+    min-width: 580px;
+  }
+
+  .table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: var(--radius-lg);
+  }
+
+  .comp-table th {
+    font-size: 13.5px !important;
+    padding: 14px 10px !important;
+    line-height: 1.3 !important;
+  }
+
+  .comp-table td {
+    font-size: 12.5px !important;
+    padding: 12px 10px !important;
+    line-height: 1.45 !important;
+  }
+
+  .comp-table tr td:first-child,
+  .comp-table tr th:first-child {
+    width: 28% !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .infra-slide-content-wrapper {
+    min-height: 240px !important;
+  }
+
+  .comp-table th {
+    font-size: 12px !important;
+    padding: 12px 8px !important;
+  }
+
+  .comp-table td {
+    font-size: 11.5px !important;
+    padding: 10px 8px !important;
+  }
+}

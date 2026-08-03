@@ -2053,6 +2053,13 @@ body.inner-page .hero-section::before,
   color: var(--muted);
 }
 
+.infra-slide-content-wrapper {
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 .infra-slider-section {
   background: var(--stats-overlay), url('../images/infra_slider_bg.jpg') no-repeat center center/cover;
   padding: 120px 0;
