@@ -545,6 +545,22 @@
     padding: 150px 0 !important;
   }
 
+  /* Mobile Header Visibility System (Mobile Screen Only) */
+  .site-header,
+  .home-page .navbar,
+  .home-page .site-header {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+    padding-top: 14px !important;
+    padding-bottom: 14px !important;
+  }
+
+  .burger-bar {
+    background-color: var(--dark) !important;
+  }
+
   /* Hero Section */
   .hero-section {
     height: 540px !important;
