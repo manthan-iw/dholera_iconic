@@ -8,12 +8,12 @@
   <meta name="description"
     content="Learn about Dholera Iconic, a premium G+5 Mixed-Use Commercial Complex in Dholera SIR developed by Shyam Group.">
 
-  <!-- Bootstrap & Bootstrap Icons CDN -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Bootstrap & Bootstrap Icons (Local Assets) -->
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css">
 
-  <!-- Swiper.js CSS CDN -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Swiper.js CSS (Local Asset) -->
+  <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css" />
 
   <!-- Custom Stylesheets -->
   <link rel="stylesheet" href="assets/css/style.css">
@@ -405,72 +405,104 @@
         <!-- Card 1 -->
         <div class="infra-card slide-up delay-1">
           <div class="infra-icon-wrapper">
-            <i class="bi bi-building text-white"></i>
+            <!-- G+5 Structure (Temple Columns / Building) -->
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="22" x2="21" y2="22"/>
+              <line x1="6" y1="18" x2="6" y2="11"/>
+              <line x1="10" y1="18" x2="10" y2="11"/>
+              <line x1="14" y1="18" x2="14" y2="11"/>
+              <line x1="18" y1="18" x2="18" y2="11"/>
+              <polygon points="12 2 20 7 4 7"/>
+              <line x1="4" y1="18" x2="20" y2="18"/>
+            </svg>
           </div>
           <h4 class="font-switzer font-medium mb-3 text-dark">G+5 Structure</h4>
           <p class="font-switzer font-regular text-muted fs-6 lh-base px-3">
-            Six floors of premium commercial space, each with its own character — ground retail, showroom floors, and
-            office levels above.
+            Six floors of premium commercial space, each with its own character — ground retail, showroom floors, and office levels above.
           </p>
         </div>
 
         <!-- Card 2 -->
         <div class="infra-card slide-up delay-2">
           <div class="infra-icon-wrapper">
-            <i class="bi bi-aspect-ratio text-white"></i>
+            <!-- Full Glass Frontage (Window Frame) -->
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <path d="M3 9h18"/>
+              <path d="M9 21V9"/>
+            </svg>
           </div>
           <h4 class="font-switzer font-medium mb-3 text-dark">Full Glass Frontage</h4>
           <p class="font-switzer font-regular text-muted fs-6 lh-base px-3">
-            Floor-to-ceiling glazing on all commercial floors maximises natural light, reduces energy use, and creates
-            a striking street presence.
+            Floor-to-ceiling glazing on all commercial floors maximises natural light, reduces energy use and creates a striking street presence.
           </p>
         </div>
 
         <!-- Card 3 -->
         <div class="infra-card slide-up delay-3">
           <div class="infra-icon-wrapper">
-            <i class="bi bi-door-open text-white"></i>
+            <!-- Double-Height Lobbies (Grid Window Doors) -->
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="4" width="16" height="16" rx="1"/>
+              <line x1="12" y1="4" x2="12" y2="20"/>
+              <line x1="4" y1="12" x2="20" y2="12"/>
+              <circle cx="10" cy="12" r="1" fill="white"/>
+              <circle cx="14" cy="12" r="1" fill="white"/>
+            </svg>
           </div>
           <h4 class="font-switzer font-medium mb-3 text-dark">Double-Height Lobbies</h4>
           <p class="font-switzer font-regular text-muted fs-6 lh-base px-3">
-            Grand entrance lobbies set the tone from the moment you walk in — conveying prestige, scale, and quality
-            to every visitor.
+            Grand entrance lobbies set the tone from the moment you walk in — conveying prestige, scale and quality to every visitor.
           </p>
         </div>
 
         <!-- Card 4 -->
         <div class="infra-card slide-up delay-4">
           <div class="infra-icon-wrapper">
-            <i class="bi bi-shield-check text-white"></i>
+            <!-- 24/7 Security (CCTV Camera) -->
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16.75 12.13L21 9.5V16.5L16.75 13.87V12.13Z"/>
+              <rect x="2" y="7" width="14" height="10" rx="2"/>
+              <circle cx="9" cy="12" r="2"/>
+            </svg>
           </div>
           <h4 class="font-switzer font-medium mb-3 text-dark">24/7 Security</h4>
           <p class="font-switzer font-regular text-muted fs-6 lh-base px-3">
-            CCTV surveillance across all floors and parking areas, with trained on-site security staff around the
-            clock.
+            CCTV surveillance across all floors and parking areas, with trained on-site security staff around the clock.
           </p>
         </div>
 
         <!-- Card 5 -->
         <div class="infra-card slide-up delay-5">
           <div class="infra-icon-wrapper">
-            <i class="bi bi-p-circle text-white"></i>
+            <!-- Ample Parking ('P' Parking Badge) -->
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="3"/>
+              <path d="M9 17V7h4a3 3 0 0 1 0 6H9"/>
+            </svg>
           </div>
           <h4 class="font-switzer font-medium mb-3 text-dark">Ample Parking</h4>
           <p class="font-switzer font-regular text-muted fs-6 lh-base px-3">
-            Dedicated basement and surface parking for tenants, customers, and visitors — a practical requirement that
-            is well-integrated.
+            Dedicated basement and surface parking for tenants, customers and visitors — a practical requirement that's often overlooked.
           </p>
         </div>
 
         <!-- Card 6 -->
         <div class="infra-card slide-up delay-6">
           <div class="infra-icon-wrapper">
-            <i class="bi bi-leaf text-white"></i>
+            <!-- Green Building Principles (Building Eco) -->
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18"/>
+              <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/>
+              <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 0 2 2h-4"/>
+              <path d="M10 6h4"/>
+              <path d="M10 10h4"/>
+              <path d="M10 14h4"/>
+            </svg>
           </div>
           <h4 class="font-switzer font-medium mb-3 text-dark">Green Building Principles</h4>
           <p class="font-switzer font-regular text-muted fs-6 lh-base px-3">
-            Energy-efficient glazing, LED lighting throughout, rainwater harvesting, and EV-ready parking bays
-            integrated from the design stage.
+            Energy-efficient glazing, LED lighting throughout, rainwater harvesting and EV-ready parking bays integrated from the design stage.
           </p>
         </div>
       </div>
@@ -575,8 +607,8 @@
 
 
   <!-- JS Script Files -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/js/navbar.js"></script>
   <script src="assets/js/animations.js"></script>
   <script src="assets/js/app.js"></script>

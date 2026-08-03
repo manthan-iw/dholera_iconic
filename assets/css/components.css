@@ -144,24 +144,45 @@
 
 
 .logo-img {
-  height: 58px;
+  height: 52px;
   width: auto;
   transition: var(--transition-normal);
 }
 
+.navbar-nav {
+  gap: 32px;
+}
+
+.navbar-nav .nav-link,
+.header-call-text,
+.header-call-num,
+.header-btn-text {
+  color: #111111 !important;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+.header-call-num {
+  font-weight: 600;
+}
+
 .navbar-nav .nav-link {
-  font-size: 16px;
-  letter-spacing: 0.05em;
-  padding: 10px 20px !important;
+  padding: 6px 0 !important;
   position: relative;
   transition: var(--transition-fast);
+}
+
+.navbar-nav .nav-link:hover,
+.header-call-num:hover {
+  color: var(--secondary) !important;
 }
 
 .navbar-nav .nav-link::after {
   content: '';
   position: absolute;
-  bottom: 0;
-  left: 20px;
+  bottom: -2px;
+  left: 0;
   width: 0;
   height: 2px;
   background-color: var(--secondary);
@@ -170,7 +191,7 @@
 
 .navbar-nav .nav-link.active::after,
 .navbar-nav .nav-link:hover::after {
-  width: calc(100% - 40px);
+  width: 100%;
 }
 
 /* Enquire Now Button */
@@ -349,7 +370,8 @@
 }
 
 .icon-wrapper,
-.infra-icon-wrapper {
+.infra-icon-wrapper,
+.arch-icon-wrapper {
   position: relative;
   width: 54px;
   height: 54px;
@@ -363,23 +385,35 @@
 }
 
 .icon-wrapper i,
-.infra-icon-wrapper i {
+.infra-icon-wrapper i,
+.arch-icon-wrapper i {
   color: #FFFFFF !important;
   font-size: 22px !important;
   line-height: 1 !important;
 }
 
-.infra-icon-wrapper svg {
-  width: 20px;
-  height: 20px;
+.infra-icon-wrapper svg,
+.arch-icon-wrapper svg,
+.icon-wrapper svg {
+  width: 22px;
+  height: 22px;
 }
 
-.infra-icon-wrapper svg path {
-  fill: var(--white) !important;
-  stroke: var(--white);
+.infra-icon-wrapper svg path,
+.infra-icon-wrapper svg circle,
+.infra-icon-wrapper svg rect,
+.infra-icon-wrapper svg line,
+.infra-icon-wrapper svg polygon,
+.arch-icon-wrapper svg path,
+.arch-icon-wrapper svg circle,
+.arch-icon-wrapper svg rect,
+.arch-icon-wrapper svg line,
+.arch-icon-wrapper svg polygon {
+  stroke: #FFFFFF;
 }
 
-.infra-card:hover .infra-icon-wrapper {
+.infra-card:hover .infra-icon-wrapper,
+.arch-card:hover .arch-icon-wrapper {
   transform: scale(1.1) rotate(5deg);
   filter: brightness(1.08);
 }
@@ -578,37 +612,6 @@
   height: 100%;
   background-color: var(--white);
   transition: var(--transition-normal);
-}
-
-.arch-icon-wrapper {
-  position: relative;
-  width: 54px;
-  height: 54px;
-  margin: 0 auto 20px;
-  background: url('../images/starburst_badge.svg') no-repeat center / contain;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1;
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.arch-icon-wrapper i {
-  color: #FFFFFF !important;
-  font-size: 22px !important;
-  line-height: 1 !important;
-}
-
-.arch-icon-wrapper svg {
-  width: 22px;
-  height: 22px;
-  stroke: #FFFFFF !important;
-}
-
-.arch-icon-wrapper svg path,
-.arch-icon-wrapper svg line,
-.arch-icon-wrapper svg polygon {
-  stroke: #FFFFFF !important;
 }
 
 .arch-card:hover {
@@ -1280,22 +1283,22 @@
 .project-banner-overlay {
 position: absolute;
     top: 30%;
-    right: 40px;
-    transform: translateY(-50%);
-    max-width: 676px;
-    z-index: 10;
+right: 40px;
+transform: translateY(-50%);
+max-width: 676px;
+z-index: 10;
 }
 
 .quote-card {
-  background: #F4F8FC;
-  border: 1px solid #0259A5;
-  border-radius: 12px;
-  padding: 18px 24px;
+background: #F4F8FC;
+border: 1px solid #0259A5;
+border-radius: 12px;
+padding: 18px 24px;
 }
 
 .stat-mini-card {
-  padding: 16px 14px;
-  background: linear-gradient(135deg, rgba(237, 245, 254, 0.4) 0%, rgba(255, 255, 255, 0.9) 100%);
+padding: 16px 14px;
+background: linear-gradient(135deg, rgba(237, 245, 254, 0.4) 0%, rgba(255, 255, 255, 0.9) 100%);
   border: 1px solid rgba(2, 89, 165, 0.08);
   border-radius: 16px;
   text-align: center;
@@ -1355,10 +1358,10 @@ position: absolute;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  height: 760px;
+  height: 800px;
   display: flex;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 140px;
 }
 
 .hero-section.hero-about {
@@ -1415,16 +1418,23 @@ body.inner-page .hero-section::before,
 }
 
 .hero-content-wrapper {
-  max-width: 650px;
+  max-width: 720px;
 }
 
 .hero-title {
-  max-width: 640px;
+  max-width: 700px;
+  font-size: 72px;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  margin-bottom: 24px;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
 }
 
 .hero-desc {
-  max-width: 540px;
+  max-width: 580px;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 40px;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 

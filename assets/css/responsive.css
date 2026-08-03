@@ -56,8 +56,20 @@
 
   /* Hero Section */
   .hero-section {
-    height: 680px !important;
+    height: 720px !important;
     padding-top: 130px !important;
+  }
+
+  .hero-title {
+    font-size: 60px !important;
+    line-height: 1.12 !important;
+    margin-bottom: 20px !important;
+  }
+
+  .hero-desc {
+    font-size: 18px !important;
+    line-height: 1.5 !important;
+    margin-bottom: 32px !important;
   }
 
   .slide-number {
@@ -205,8 +217,20 @@
 
   /* Hero Section */
   .hero-section {
-    height: 640px !important;
+    height: 660px !important;
     padding-top: 120px !important;
+  }
+
+  .hero-title {
+    font-size: 52px !important;
+    line-height: 1.15 !important;
+    margin-bottom: 18px !important;
+  }
+
+  .hero-desc {
+    font-size: 17px !important;
+    line-height: 1.5 !important;
+    margin-bottom: 28px !important;
   }
 
   .slide-number {
@@ -357,6 +381,18 @@
   .hero-section {
     height: 600px !important;
     padding-top: 110px !important;
+  }
+
+  .hero-title {
+    font-size: 44px !important;
+    line-height: 1.18 !important;
+    margin-bottom: 16px !important;
+  }
+
+  .hero-desc {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+    margin-bottom: 24px !important;
   }
 
   .slide-title {
@@ -511,8 +547,20 @@
 
   /* Hero Section */
   .hero-section {
-    height: 560px !important;
+    height: 540px !important;
     padding-top: 100px !important;
+  }
+
+  .hero-title {
+    font-size: 38px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 14px !important;
+  }
+
+  .hero-desc {
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+    margin-bottom: 20px !important;
   }
 
   /* Mobile Dark Hero Overlay System for Max Text Contrast */
@@ -711,6 +759,18 @@
     min-height: 480px !important;
     padding-top: 110px !important;
     padding-bottom: 60px !important;
+  }
+
+  .hero-title {
+    font-size: 32px !important;
+    line-height: 1.22 !important;
+    margin-bottom: 12px !important;
+  }
+
+  .hero-desc {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+    margin-bottom: 20px !important;
   }
 
   .about-left-wrapper {
@@ -923,6 +983,18 @@
     min-height: 420px !important;
     padding-top: 100px !important;
     padding-bottom: 50px !important;
+  }
+
+  .hero-title {
+    font-size: 26px !important;
+    line-height: 1.25 !important;
+    margin-bottom: 10px !important;
+  }
+
+  .hero-desc {
+    font-size: 13.5px !important;
+    line-height: 1.45 !important;
+    margin-bottom: 18px !important;
   }
 
   .about-left-wrapper {

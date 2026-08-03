@@ -1,5 +1,4 @@
-@import url('https://api.fontshare.com/v2/css?f[]=switzer@200,300,400,500,600,700,800,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('fonts.css');
 
 /* ==========================================
    DESIGN SYSTEM & GLOBAL VARIABLES
@@ -61,15 +60,19 @@ body {
   overflow-x: hidden;
 }
 
-/* Custom Global Container System */
+.text-dark {
+  color: #111111 !important;
+}
+
+/* Custom Global Container System for 1920px Screen */
 .container,
 .max-width-container {
-  max-width: 1600px !important;
+  max-width: 1720px !important;
   width: 100% !important;
   margin-left: auto !important;
   margin-right: auto !important;
-  padding-left: 60px !important;
-  padding-right: 60px !important;
+  padding-left: 80px !important;
+  padding-right: 80px !important;
 }
 
 @media (max-width: 991px) {
