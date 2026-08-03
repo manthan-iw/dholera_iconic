@@ -1327,18 +1327,17 @@
   }
 }
 
-/* Technical Specification Tab Buttons Responsive Styling */
+/* Technical Specification Tab Buttons Responsive (No Horizontal Scroll, 2x2 Wrapping Grid) */
 @media (max-width: 767.98px) {
   .spec-tabs-container {
     display: flex !important;
-    flex-wrap: nowrap !important;
-    overflow-x: auto !important;
-    justify-content: flex-start !important;
-    gap: 10px !important;
-    padding: 4px 4px 12px 4px !important;
+    flex-wrap: wrap !important;
+    overflow-x: visible !important;
+    justify-content: center !important;
+    gap: 8px 10px !important;
+    padding: 0 !important;
     margin-bottom: 24px !important;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
+    width: 100% !important;
   }
 
   .spec-tabs-container::-webkit-scrollbar {
@@ -1346,11 +1345,23 @@
   }
 
   .spec-tab-btn {
-    padding: 10px 18px !important;
-    font-size: 14px !important;
+    padding: 9px 12px !important;
+    font-size: 13px !important;
     gap: 6px !important;
-    flex-shrink: 0 !important;
+    flex: 1 1 calc(50% - 10px) !important;
+    min-width: 125px !important;
+    max-width: calc(50% - 5px) !important;
+    justify-content: center !important;
+    text-align: center !important;
     white-space: nowrap !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .spec-tab-btn {
+    padding: 7px 8px !important;
+    font-size: 12px !important;
+    gap: 4px !important;
   }
 }
 
