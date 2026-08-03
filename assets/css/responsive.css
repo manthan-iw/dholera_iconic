@@ -1619,22 +1619,27 @@
 /* Journey Slider Active Scale-Up Responsive System */
 @media (max-width: 767.98px) {
   .journeySwiper .swiper-slide {
-    transform: scale(0.9) !important;
+    transform: scale(0.92) !important;
+    transform-origin: top left !important;
   }
 
   .journeySwiper .swiper-slide-active {
     transform: scale(1) !important;
   }
 
+  .journey-card {
+    border-radius: 12px !important;
+  }
+
   .journey-card img {
-    height: 240px !important;
+    height: 220px !important;
   }
 
   .journey-card-body {
-    padding: 20px 22px !important;
+    padding: 14px 18px !important;
   }
 
   .journey-year-span {
-    font-size: 32px !important;
+    font-size: 28px !important;
   }
 }

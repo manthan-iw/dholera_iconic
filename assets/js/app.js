@@ -310,19 +310,19 @@ function initJourneySlider() {
     breakpoints: {
       576: {
         slidesPerView: 1.25,
-        spaceBetween: 24,
+        spaceBetween: 20,
       },
       768: {
-        slidesPerView: 1.35,
-        spaceBetween: 28,
+        slidesPerView: 1.38,
+        spaceBetween: 24,
       },
       992: {
-        slidesPerView: 1.45,
-        spaceBetween: 32,
+        slidesPerView: 1.5,
+        spaceBetween: 28,
       },
       1200: {
-        slidesPerView: 1.5,
-        spaceBetween: 35,
+        slidesPerView: 1.62,
+        spaceBetween: 30,
       }
     }
   });
