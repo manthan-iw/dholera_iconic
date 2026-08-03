@@ -1819,6 +1819,8 @@ body.inner-page .hero-section::before,
 .journeySwiper .swiper-slide-active .journey-card {
   box-shadow: 0 16px 36px rgba(2, 89, 165, 0.1);
   border-color: rgba(2, 89, 165, 0.2);
+  width: 740px;
+  max-width: 100%;
 }
 
 .journey-card {
@@ -1828,6 +1830,8 @@ body.inner-page .hero-section::before,
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
   border: 1px solid #E2E8F0;
   transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  width: 100%;
+  max-width: 740px;
 }
 
 .journey-card img {

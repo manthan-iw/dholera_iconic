@@ -299,10 +299,10 @@ function initJourneySlider() {
     spaceBetween: 20,
     speed: 800,
     loop: true,
-    autoplay: {
-      delay: 3500,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 3500,
+    //   disableOnInteraction: false,
+    // },
     navigation: {
       nextEl: "#journey-next-btn",
       prevEl: "#journey-prev-btn"
