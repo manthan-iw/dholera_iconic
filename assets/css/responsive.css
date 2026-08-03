@@ -606,45 +606,49 @@
 
   /* What We Offer Section */
   .offer-card {
-    height: 360px !important;
-    min-height: 360px !important;
+    height: 420px !important;
+    min-height: 420px !important;
   }
 
   .offer-card-header {
-    padding: 24px 20px 0 20px !important;
+    padding: 28px 24px 0 24px !important;
   }
 
   .offer-card-hover-content {
-    top: 75px !important;
-    left: 20px !important;
-    right: 20px !important;
-    bottom: 20px !important;
+    top: 85px !important;
+    left: 24px !important;
+    right: 24px !important;
+    bottom: 24px !important;
   }
 
   .offer-card-desc {
     font-size: 13px !important;
-    line-height: 1.45 !important;
-    margin-bottom: 8px !important;
-  }
-
-  .space-checklist {
-    gap: 4px !important;
+    line-height: 1.5 !important;
     margin-bottom: 10px !important;
   }
 
+  .space-checklist {
+    gap: 6px !important;
+    margin-bottom: 12px !important;
+  }
+
   .space-check-item {
-    font-size: 12.5px !important;
+    font-size: 13px !important;
   }
 
   .offer-card-image-wrapper {
-    height: 280px !important;
+    height: 310px !important;
+    width: 100% !important;
+    display: flex !important;
+    align-items: flex-end !important;
+    justify-content: center !important;
   }
 
   .offer-card-image {
-    width: 115% !important;
-    max-width: 115% !important;
-    height: auto !important;
-    max-height: 280px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 100% !important;
+    max-height: 290px !important;
     object-fit: contain !important;
     object-position: bottom center !important;
   }
@@ -791,20 +795,21 @@
   }
 
   .offer-card {
-    height: 360px !important;
-    min-height: 360px !important;
+    height: 420px !important;
+    min-height: 420px !important;
     margin-top: 0 !important;
   }
 
   .offer-card-image-wrapper {
-    height: 280px !important;
+    height: 310px !important;
+    width: 100% !important;
   }
 
   .offer-card-image {
-    width: 115% !important;
-    max-width: 115% !important;
-    height: auto !important;
-    max-height: 280px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 100% !important;
+    max-height: 290px !important;
     object-fit: contain !important;
     object-position: bottom center !important;
   }
@@ -1013,20 +1018,21 @@
   }
 
   .offer-card {
-    height: 360px !important;
-    min-height: 360px !important;
+    height: 420px !important;
+    min-height: 420px !important;
     margin-top: 0 !important;
   }
 
   .offer-card-image-wrapper {
-    height: 280px !important;
+    height: 310px !important;
+    width: 100% !important;
   }
 
   .offer-card-image {
-    width: 115% !important;
-    max-width: 115% !important;
-    height: auto !important;
-    max-height: 280px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 100% !important;
+    max-height: 290px !important;
     object-fit: contain !important;
     object-position: bottom center !important;
   }
