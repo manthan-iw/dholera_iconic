@@ -1451,3 +1451,72 @@
     max-height: 32px !important;
   }
 }
+
+/* Mobile Form Typography & Compact Container System */
+@media (max-width: 991px) {
+  .enquiry-card-container {
+    padding: 24px 20px !important;
+    border-radius: 16px !important;
+  }
+
+  .form-label {
+    font-size: 13.5px !important;
+    font-weight: 500 !important;
+    margin-bottom: 5px !important;
+  }
+
+  .form-control,
+  .form-select {
+    font-size: 14px !important;
+    padding: 10px 14px !important;
+    border-radius: 8px !important;
+  }
+
+  .form-control::placeholder {
+    font-size: 13.5px !important;
+  }
+
+  .enquiry-card-container h3,
+  .enquiry-card-container h4,
+  .enquiry-card-container .h3-title,
+  .enquiry-card-container .h4-title {
+    font-size: 20px !important;
+    margin-bottom: 6px !important;
+  }
+
+  .enquiry-card-container p {
+    font-size: 13px !important;
+    line-height: 1.45 !important;
+    margin-bottom: 18px !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .enquiry-card-container {
+    padding: 20px 16px !important;
+  }
+
+  .form-label {
+    font-size: 13px !important;
+    margin-bottom: 4px !important;
+  }
+
+  .form-control,
+  .form-select {
+    font-size: 13.5px !important;
+    padding: 9px 12px !important;
+  }
+
+  .form-control::placeholder {
+    font-size: 13px !important;
+  }
+
+  .enquiry-card-container h3,
+  .enquiry-card-container h4 {
+    font-size: 18px !important;
+  }
+
+  .enquiry-card-container p {
+    font-size: 12.5px !important;
+  }
+}
